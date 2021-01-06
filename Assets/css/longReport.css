@@ -421,3 +421,37 @@
    .width-text-box-portal{
      width: 100%;
    }
+.padding-left-10-report{
+  padding-left: 40%;
+}
+.div-text-arranged-portal{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    padding-left: 0%;
+    font-size: 14px;
+   
+}
+.padding-text-succo-portal{
+    padding-right:11% ;
+}
+.font-size-for-col-portal{
+    font-size: 14px;
+}
+.mb-portal-set{
+    margin-bottom: 5px;
+
+}
+.m-top-set-portal{
+    margin-top: 13px;
+}
+.set-padding-time-portal{
+    padding-left: 20px!important;
+}
+.font-time-portal-report{
+    font-size: 13px;
+    color: #20cca5;
+    font-weight: bold;
+    padding-left: 4%;
+}
