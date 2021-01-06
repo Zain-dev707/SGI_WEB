@@ -1,14 +1,21 @@
 .heading-portal{
   
-    height: 50px;
+    height: 42px;
     width: 120px;
+    border: none;
+}
+.main-heading-portal5{
+    height: 51px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
     border: none;
 }
 .main-heading-portal-1{
      width: 85px;
 }
 .height-col-side-portal{
-    height: 50px;
+    height: 42px;
     border-bottom:2px dashed;
     color: #a2c0d4;
 }
@@ -25,14 +32,14 @@
 }
 .main-heading-portal{
     display: flex !important;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .row-height-portal{
-    height: 50px;
+    height: 42px;
     border-bottom:2px dashed;
     color: #a2c0d4;
-    padding-left: 42px;
+    padding-left: 40px;
 }
 .bottom-border-portal{
     border-bottom: 2px solid red;
@@ -60,6 +67,6 @@
     font-size: 0.8rem;
 }
 .col-eight-portal{
-    top: 38px;
+    top: 31px;
     padding-left: 8px
 }
