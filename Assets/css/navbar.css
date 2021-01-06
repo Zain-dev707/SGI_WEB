@@ -51,3 +51,59 @@ position: absolute;
 .font-size-bell-icon-portal{
   font-size: 24px;
 }
+.paddingRight-portal{
+  padding-right: 2.5%;
+  padding-left: 6%;
+}
+.dot {
+  background-color: #e62e2d;
+  height: 25px;
+  width: 25px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.dot1{
+  background-color: #6ddcce;
+  height: 25px;
+  width: 25px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.dot2{
+  background-color:#4e97ff;
+  height: 25px;
+  width: 25px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.dot3{
+  background-color: #4e97ff;
+  height: 25px;
+  width: 25px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.dot4{
+  background-color: #e97027;
+  height: 25px;
+  width: 25px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.time-font-size-portal{
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+.justify-content-around{
+  justify-content: space-around;
+}
