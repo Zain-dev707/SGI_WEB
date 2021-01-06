@@ -14,7 +14,7 @@
 }(this, function ($) {
 
     // default config
-    var monthArray1 = ['','January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var monthArray1 = ['','January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Setembro', 'October', 'November', 'December'];
     var defaults = {
 
         // 宽度
@@ -48,10 +48,10 @@
         startWeek: 0,
 
         // 星期格式
-        weekArray: ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sexta', 'Dom'],
+        weekArray: ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sab.', 'Dom.'],
 
         // 月份格式
-    monthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    monthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Setembro', 'October', 'November', 'December'],
        
         // 设置选择范围
         // 格式：[开始日期, 结束日期]
