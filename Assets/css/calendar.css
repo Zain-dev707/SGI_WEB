@@ -102,7 +102,7 @@
 }
 
 .calendar-display {
-    font-size: 28px;
+    font-size: 20px;
     text-indent: 10px;
 }
 
@@ -236,3 +236,15 @@
     border: 6px solid transparent;
     border-top-color: #000;
 }
+.angle-down{
+    font-size: 28px;
+    transform: rotate(360deg);
+    cursor: pointer;
+    color: #3a6cf1;
+  }
+  .iconSize-portal{
+    width: 20px;
+    }
+    .iconSize1-portal{
+        width: 26px;
+    }

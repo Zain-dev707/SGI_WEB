@@ -18,3 +18,15 @@
         #show{
             display: block;
         }
+        .angle-down{
+            font-size: 28px;
+            transform: rotate(360deg);
+            cursor: pointer;
+            color: #3a6cf1;
+          }
+          .iconSize-portal{
+            width: 20px;
+            }
+            .iconSize1-portal{
+                width: 26px;
+            }
