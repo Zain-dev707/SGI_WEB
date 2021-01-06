@@ -35,4 +35,16 @@
 {
     background-color: #f7f7f7;
 }
+.fa-chevron-left{
+    position: absolute;
+    top: 24px;
+    left: -15px;
+    z-index: 111111111;
+}
+.fa-chevron-right{
+    position: absolute;
+    top: 24px;
+    right: -15px;
+    z-index: 111111111;
+}
 
