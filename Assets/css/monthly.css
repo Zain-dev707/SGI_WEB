@@ -1,0 +1,38 @@
+.border
+{
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.height-60-portal 
+{
+    height: 60px;
+    background-color: #f1f5f8;
+    padding-top: 15px;
+    
+}
+
+.progress-portal
+{
+    height: 0.4rem;
+    background-color: lightgray !important;
+}
+.progress-bar {
+    background-color:transparent;
+  
+}
+.height-100-portal
+{
+    height: 100px;
+}
+
+.border-rad-5-portal
+{
+    border-radius: 5px;
+}
+
+.bg-gray-portal
+{
+    background-color: #f7f7f7;
+}
