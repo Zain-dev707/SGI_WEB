@@ -421,3 +421,15 @@
    .width-text-box-portal{
      width: 100%;
    }
+.padding-left-10-report{
+  padding-left: 40%;
+}
+.div-text-arranged-portal{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    padding-left: 0%;
+    font-size: 14px;
+   
+}
