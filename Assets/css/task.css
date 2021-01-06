@@ -1,0 +1,38 @@
+.heading-portal{
+  
+    height: 50px;
+    width: 120px;
+    border: none;
+}
+/* .heading-portal:active{
+    background-color:black ;
+    color: white;
+} */
+/* .heading-portal:visited{
+    background-color:black ;
+    color: white;
+} */
+.heading-portal>p{
+  padding: 12px 10px;
+}
+.main-heading-portal{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.row-height-portal{
+    height: 50px;
+    border-bottom:2px dashed;
+    color: #a2c0d4;
+    padding-left: 42px;
+}
+.bottom-border-portal{
+    border-bottom: 2px solid red;
+}
+.border-green-portal{
+    border-bottom: 2px solid red;
+}
+
+.color-black{
+    color: black;
+}

@@ -433,3 +433,25 @@
     font-size: 14px;
    
 }
+.padding-text-succo-portal{
+    padding-right:11% ;
+}
+.font-size-for-col-portal{
+    font-size: 14px;
+}
+.mb-portal-set{
+    margin-bottom: 5px;
+
+}
+.m-top-set-portal{
+    margin-top: 13px;
+}
+.set-padding-time-portal{
+    padding-left: 20px!important;
+}
+.font-time-portal-report{
+    font-size: 13px;
+    color: #20cca5;
+    font-weight: bold;
+    padding-left: 4%;
+}
