@@ -4,6 +4,13 @@
     width: 120px;
     border: none;
 }
+.main-heading-portal5{
+    height: 51px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
 .main-heading-portal-1{
      width: 85px;
 }
@@ -25,8 +32,8 @@
 }
 .main-heading-portal{
     display: flex !important;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .row-height-portal{
     height: 42px;
