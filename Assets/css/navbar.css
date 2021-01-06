@@ -1,0 +1,53 @@
+.w-218-Z{
+    width: 228%!important;
+}
+.z-button-white{
+    background-color: WHITE;
+    color: blue;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    width: 40px;;
+}
+.z-circle-yellow{
+    padding:5px;
+    top: 24px;
+position: absolute;
+    border-radius: 50px;
+    background-color: yellow;
+}
+.z-border-none{
+    border: navajowhite !important;
+    border-radius: 5px;
+}
+.z-badge{
+  border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* padding: px; */
+    /* height: 5px; */
+    
+    border-radius: 100px;
+  
+    
+}
+.z-w-icons{
+  width: 35px;
+}
+.z-w-icons-001{
+  width: 40px;
+}
+.set-z-top{
+  top: 10px;;
+}
+.mainlogo-portal{
+ width: 85px;
+}
+.font-size-bell-icon-portal{
+  font-size: 24px;
+}

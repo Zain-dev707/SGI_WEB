@@ -1,0 +1,53 @@
+                     .removeClass(SELECT_CLASS)
+                        .filter(function (index) {
+                            return parseInt(this.innerHTML) === d;
+                        }).addClass(SELECT_CLASS);
+                };
+
+            if (type) {
+                var ret = this.updateDateView(y, m, {
+                    'old': 'prev',
+                    'new': 'next'
+                }[type], toggleClass);
+                y = ret.y;
+                m = ret.m;
+                this.options.viewChange('date', y, m);
+            } else {
+                toggleClass.call(this);
+            }
+
+            return new Date(y, m - 1, d);
+        },
+        showLabel: function (event, view, date, data) {
+            var $lbl = this.$label;
+
+            $lbl.find('p').html(this.options.label.repeat({
+                m: view,
+                d: date.format(this.options.format),
+                v: data
+            }).replace(/\n/g, '<br>'));
+
+            var w = $lbl.outerWidth(),
+                h = $lbl.outerHeight();
+
+            $lbl.css({
+                left: (event.pageX - w / 2) + 'px',
+                top: (event.pageY - h - 20) + 'px',
+                zIndex: this.options.zIndex + 1
+            }).show();
+        },
+        hasLabel: function () {
+            if (this.options.label) {
+                $('body').append(this.$label);
+                return true;
+            }
+            return false;
+        },
+        event: function () {
+            var _this = this,
+                vc = _this.options.viewChange;
+
+            // view change
+            _this.$element.on('click', DISPLAY_VD, function () {
+                var arr = _this.getDisDateValue();
+        

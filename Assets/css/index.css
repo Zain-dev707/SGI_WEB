@@ -1,0 +1,146 @@
+.a-colorBlue{
+    color: #3a6cf1;
+    
+    }
+    .a-date-portal{
+    color: #252631;
+    font-weight: 400;
+    
+    }
+    .a-borderRadius-portal{
+    border-radius: 7px;
+    }
+    .a-borderRightRadius-portal{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    }
+    .a-height-portal{
+    height: 55px;
+    }
+    .diaBoxShadow-portal{
+    box-shadow: 5px 1px 16px -11px;
+    background: whitesmoke;
+    }
+    
+    .a-diaHeading-portal{
+    padding-left: 13px !important;
+    }
+    .borderCol8-portal{
+    border-left: 2px solid #f7f7f7;
+    }
+    .a-rowBorder-portal{
+    border: 1px solid #f7f7f7;
+    }
+    .twentyEight-portal{
+    height: 28px;
+    }
+    .row1Style-portal{
+    border-bottom:2px dashed;
+    color: #a2c0d4;
+    }
+    .fiftyEight-portal{
+    height: 58px;
+    }
+    .seventyOne-portal{
+    height: 71px;
+    }
+    
+    .row3Style-portal{
+    
+    border-bottom: 2px solid #67d1c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .row4Style-portal{
+    border-bottom: 2px solid #e97027;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .borderDashed-portal{
+    border-bottom:2px dashed;
+    color: #a2c0d4;
+    }
+    
+    .row5style-portal{
+    border-bottom:2px dashed;
+    color: #a2c0d4;
+    }
+    .row6style-portal{
+    border-bottom:2px dashed;
+    color: #a2c0d4;
+    }
+    .row7Style-portal {
+    border-bottom: 2px solid #4e97ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .row8Style-portal {
+    border-bottom: 2px solid #73e8cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .row9Style-portal{
+    border-bottom: 2px solid #6665dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .sixetyFive-portal{
+    height: 65px;
+    }
+    .sixetyEight-portal{
+    height: 68px;
+    }
+    .eightySix-portal{
+    height: 86px;
+    }
+    .eightySeven-portal{
+    height: 87px;
+    }
+    .seventyFive-portal{
+    height: 75px;
+    }
+    .col1-portal{
+    top: 16px;
+    }
+    .col2-portal{
+    top: 58px;
+    }
+    .col3-portal{
+    top: 45px;
+    }
+    .col4-portal{
+    top: 74px;
+    }
+    .col5-portal{
+    top: 63px;
+    }
+    .col6-portal{
+    top: 58px;
+    }
+    .iconSize-portal{
+    width: 20px;
+    }
+    .iconSize1-portal{
+        width: 26px;
+    }
+    .iconUper{
+        margin: auto;
+    padding-left: 44px;
+}
+    
+    .sidebar-padding-Portal{
+        padding-top: 25px;
+    }
+    .svg1{
+        cursor: pointer;
+       
+    }
+    #show{
+        display: block;
+    }

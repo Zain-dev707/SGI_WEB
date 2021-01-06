@@ -1,0 +1,96 @@
+.w-218-Z{
+    width: 228%!important;
+}
+.z-button-white{
+    background-color: WHITE;
+    color: blue;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    width: 40px;;
+}
+.z-circle-yellow{
+    padding:5px;
+    top: 9px;
+position: absolute;
+    border-radius: 50px;
+    background-color: yellow;
+}
+.z-border-none{
+    border: navajowhite !important;
+    border-radius: 5px;
+}
+.z-badge{
+  border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* padding: px; */
+    /* height: 5px; */
+    
+    border-radius: 100px;
+  
+    
+}
+.z-w-icons{
+  width: 35px;
+}
+.z-w-icons-001{
+  width: 40px;
+}
+.set-z-top{
+  top: 10px;;
+}
+
+.m1-btn {
+    
+    top: 40%;
+    left: 31%;
+    display: inline-block;
+    background: #20cca5;
+  
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+  
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+ 
+ #m1 {
+    display: none;
+    
+  }
+  #m1:checked + label {
+    background: #ff5b5b;
+  }
+
+   .btn-lock {
+     
+        top: 40%;
+        left: 31%;
+        display: inline-block;
+        background: #20cca5;
+      
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+      
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+      }
+     
+     #inpLock {
+        display: none;
+        
+      }
+      #inpLock:checked + label {
+        background: #ff5b5b;
+      }
+   

@@ -1,0 +1,46 @@
+tion () {
+            this.$week = this.$element.find('.week');
+            this.$dateItems = this.$element.find('.date-items');
+            this.$monthItems = this.$element.find('.month-items');
+            this.$label = this.$element.find('.calendar-label');
+            this.$disDate = this.$element.find(DISPLAY_VD);
+            this.$disMonth = this.$element.find(DISPLAY_VM);
+
+            var y = this.date.getFullYear(),
+                m = this.date.getMonth() + 1;
+
+            this.updateDisDate(y, m);
+            this.updateMonthView(y);
+
+            this.fillDateItems(y, m);
+
+            this.options.trigger && this.trigger();
+            
+
+        },
+        setView: function (view) {
+            this.$element.removeClass(VIEW_CLASS.date + ' ' + VIEW_CLASS.month)
+                .addClass(VIEW_CLASS[view]);
+            this.view = view;
+        },
+        updateDateView: function (y, m, dirc, cb) {
+            m = m || this.date.getMonth() + 1;
+
+            var _this = this,
+                $dis = this.$dateItems,
+                exec = {
+                    prev: function () {
+                        var pm = Date.getPrevMonth(y, m),
+                            ppm = Date.getPrevMonth(y, m, 2),
+                            $prevItem = _this.getDaysHtml(ppm.y, ppm.m);
+
+                        m = pm.m;
+                        y = pm.y;
+
+                        $dis.animate({
+                            marginLeft: 0
+                        }, 300, 'swing', function () {
+                            $dis.children(':last').remove();
+                            $dis.prepend($prevItem).css('margin-left', '-100%');
+
+                            $.isFunction(cb) && cb.call(_th

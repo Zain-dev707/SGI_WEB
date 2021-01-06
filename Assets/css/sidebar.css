@@ -1,0 +1,20 @@
+
+    .iconSize{
+        width: 20px;
+        }
+        .iconSize1{
+            width: 26px;
+        }
+        .iconUper{
+            margin-left: auto;
+        }
+        .sidebar-padding-Portap{
+            padding-top: 25px;
+        }
+        .svg1{
+            cursor: pointer;
+           
+        }
+        #show{
+            display: block;
+        }

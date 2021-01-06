@@ -1,0 +1,420 @@
+
+.m1-btn {
+    
+    top: 40%;
+    left: 31%;
+    display: inline-block;
+    background: #c8e1e4;
+    color: #6cb6b7;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+ 
+  #m1 {
+    display: none;
+    
+  }
+  #m1:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+
+
+  #m2 {
+    display: none;
+    
+  }
+  #m2:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m3 {
+    display: none;
+    
+  }
+  #m3:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m4 {
+    display: none;
+    
+  }
+  #m4:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m5 {
+    display: none;
+    
+  }
+  #m5:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m6 {
+    display: none;
+    
+  }
+  #m6:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m7 {
+    display: none;
+    
+  }
+  #m7:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m8 {
+    display: none;
+    
+  }
+  #m8:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m9 {
+    display: none;
+    
+  }
+  #m9:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m10 {
+    display: none;
+    
+  }
+  #m10:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m11 {
+    display: none;
+    
+  }
+  #m11:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m12 {
+    display: none;
+    
+  }
+  #m12:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m13 {
+    display: none;
+    
+  }
+  #m13:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m14 {
+    display: none;
+    
+  }
+  #m14:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m15 {
+    display: none;
+    
+  }
+  #m15:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m16 {
+    display: none;
+    
+  }
+  #m16:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m17 {
+    display: none;
+    
+  }
+  #m17:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m18 {
+    display: none;
+    
+  }
+  #m18:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m19 {
+    display: none;
+    
+  }
+  #m19:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m20 {
+    display: none;
+    
+  }
+  #m20:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m21 {
+    display: none;
+    
+  }
+  #m21:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m22 {
+    display: none;
+    
+  }
+  #m22:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+  #m23 {
+    display: none;
+    
+  }
+  #m23:checked + label {
+    background: #ff5b5b;
+    color: white;
+  }
+ 
+
+ 
+
+   .btn-lock {
+     
+        top: 40%;
+        left: 31%;
+        display: inline-block;
+        background: #c8e1e4;
+        color: #6cb6b7;
+      font-size: 12px;
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+      
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+      }
+     
+      #inpLock-portal-1 {
+        display: none;
+        
+      }
+      #inpLock-portal-1:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-2 {
+        display: none;
+        
+      }
+      #inpLock-portal-2:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-3 {
+        display: none;
+        
+      }
+      #inpLock-portal-3:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-4{
+        display: none;
+        
+      }
+      #inpLock-portal-4:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-5 {
+        display: none;
+        
+      }
+      #inpLock-portal-5:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-6 {
+        display: none;
+        
+      }
+      #inpLock-portal-6:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-7 {
+        display: none;
+        
+      }
+      #inpLock-portal-7:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-8 {
+        display: none;
+        
+      }
+      #inpLock-portal-8:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-9 {
+        display: none;
+        
+      }
+      #inpLock-portal-9:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-10 {
+        display: none;
+        
+      }
+      #inpLock-portal-10:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-11 {
+        display: none;
+        
+      }
+      #inpLock-portal-11:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-12 {
+        display: none;
+        
+      }
+      #inpLock-portal-12:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-13 {
+        display: none;
+        
+      }
+      #inpLock-portal-13:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-14 {
+        display: none;
+        
+      }
+      #inpLock-portal-14:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-15 {
+        display: none;
+        
+      }
+      #inpLock-portal-15:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+      #inpLock-portal-16 {
+        display: none;
+        
+      }
+      #inpLock-portal-16:checked + label {
+        background: #ff5b5b;
+        color: white;
+      }
+
+
+
+
+/* bvvv/ */
+      
+.input-check-portal-for-btn {
+    
+  top: 40%;
+  left: 31%;
+  font-size: 12px;
+
+  display: inline-block;
+  background:white;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+#input-check-portal-for-btn-label{
+  display: none;
+}
+#input-check-portal-for-btn-label:checked + label {
+  background: #ff5b5b;
+  color: white;
+}
+#inp-btn-inner-portal{
+  display: none;
+}
+#inp-btn-inner-portal:checked + label {
+  background: #ff5b5b;
+  color: white;
+}
+/* xcvxcv */
+   .dormiuode-portal{
+     color: #20cca5;
+   }
+   .remove-border-portal{
+     border: none;
+     width: 25%;
+   }
+   .border-suno-portal{
+     border-bottom: 1px solid #20cca5 ;
+   }
+   .checktop-portal{
+    color: #20cca5;
+
+   }
+   .btn-check-portal{
+     width: 100%;
+     background: #20cca5;
+     border-radius: 6px;
+     border: none;
+   }
+   .remove-border-last-portal{
+    width: 46px;
+     border: none;
+   }
+   .w-113-portal{
+     width: 113%;
+   }
+   .m-left-74-portal{
+     margin-left: 74%;
+   }

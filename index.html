@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="Assets/css/style.css">
+  <link rel="stylesheet" href="Assets/css/index.css">
+  <link rel="stylesheet" href="Assets/css/navbar.css">
+
+  
+
+  <link rel="stylesheet" href="Assets/css/calendar.css">
+  <link rel="stylesheet" href="">
+  <title class="text-info">Hello, world!</title>
+<style>
+
+  
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+
+</style>
+</head>
+
+<body class="bg-light">
+  <div class="pl-5 pr-5">
+    <!-- navbar start  -->
+    <nav class="navbar navbar-expand-xl navbar-light `">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="ml-5">
+          <form class="form-inline w-218-Z">
+            <Span class="fa fa-search text-dark ml-3  " style="z-index: 1;position: absolute;"></Span>
+            <input class="form-control w-218-Z pl-5 z-border-none" type="search" placeholder="Search"
+              aria-label="Search">
+
+          </form>
+        </div>
+        <ul class="navbar-nav ml-auto mt-1 ">
+          <li class="nav-item active ml-4">
+            <button class="z-button-white " href="#"> <span class="fa fa-bell-o"></span><Span
+                class="z-circle-yellow"></Span></button>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" href="#"><img src="Assets/icon/icon 2.png" class="z-w-icons"></a>
+          </li>
+
+          <li class="nav-item ml-4">
+            <a class="nav-link disabled" href="#"><img src="Assets/icon/icon-01.png" class="z-w-icons-001"></a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link disabled" href="#"><img src="Assets/icon//face-01.png" class="z-w-icons-001"></a>
+          </li>
+          <li class="nav-item dropdown ml-4">
+            <a class="nav-link dropdown-toggle mt-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <b> Galante</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="col-md-12 mt-3 pl-0">
+        <div class="d-flex">
+          <h4 class="text-dark">Teriface de hoje</h4>
+          <div class="badge badge-warning z-badge ml-5  mt-2  mb-2 set-z-top"><i>6</i></div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end  -->
+    <!-- main contaier start  -->
+    <div class="container-fluid mb-5">
+
+      <div class="row bg-white mt-5 ">
+      
+        <!-- calender  portion start  -->
+        <div class="col-md-4 col-sm-4 col-lg-4 ">
+          <!-- start -->
+          <div id="demo">
+            <div id="one"></div>
+            
+        </div>
+          <!-- end -->
+          <div class="d-flex mt-4">
+            <div><img src="Assets/icon/dashboard.png" class="img-fluid iconSize1-portal"
+              alt="">
+            &nbsp; &nbsp;<span>Dashboard</span>
+          </div>
+          <div class="iconUper"><svg width="18px" height="18px" viewBox="0 0 1024 1024" data-aut-id="icon" onclick="showOrHideDiv()" class="svg1" fill-rule="evenodd" id="icon1" style="transform: rotate(360deg);">
+            <path class="rui-77aaa" d="M85.392 746.667h60.331l366.336-366.336 366.336 366.336h60.331v-60.331l-408.981-409.003h-35.307l-409.045 409.003z"></path>
+          </svg></div>
+          </div>
+        <div id="show" >
+                <!-- 2 -->
+                <div class="sidebar-padding-Portal"><img src="Assets/icon/calender.png" class="img-fluid iconSize1-portal"
+                  alt="">
+                &nbsp; &nbsp;<span>Categorias</span>
+              </div>
+              <!-- 3 -->
+              <div class="sidebar-padding-Portal"><img src="Assets/icon/people.png" class="img-fluid iconSize1-portal"
+                alt="">
+              &nbsp; &nbsp;<span>Professores</span>
+            </div>
+            <!-- 4 -->
+            <div class="sidebar-padding-Portal"><img src="Assets/icon/cap.png" class="img-fluid iconSize1-portal"
+              alt="">
+            &nbsp; &nbsp;<span>Alunas</span>
+          </div>
+          <!-- 5 -->
+          <div class="sidebar-padding-Portal"><img src="Assets/icon/message.png" class="img-fluid iconSize1-portal"
+            alt="">
+          &nbsp; &nbsp;<span>Responsavel Financeiro</span>
+        </div>
+        <!-- 6 -->
+        <div class="sidebar-padding-Portal"><img src="Assets/icon/setting.png" class="img-fluid iconSize1-portal"
+          alt="">
+        &nbsp; &nbsp;<span>Configuracoes</span>
+      </div>
+        </div>
+           
+         
+          </div>
+        <!-- calender  portion end -->
+        <!-- 8 col main - div -->
+        <div class="col-md-8 col-lg-8 col-sm-12 ">
+          <div class="row pt-5 ">
+            <div class="col-md-3 col-lg-3 col-sm-12 ">
+              <h5 class="a-date">13 September</h5>
+            </div>
+            <div class="col-md-2 col-lg-2 col-sm-12"></div>
+            <div class="col-md-5 col-lg-5 col-sm-6 a-colorBlue-portal a-borderRadius-portal pr-0">
+              <div class="d-flex justify-content-around a-colorBlue-portal bg-light a-height-portal align-items-lg-end">
+                <div>
+                  <h5>Ano</h5>
+                </div>
+                <div>
+                  <h5>Mes</h5>
+                </div>
+                <div>
+                  <h5>Semana</h5>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-1 col-lg-1 col-sm-12 a-height diaBoxShadow-portal bg-white align-items-lg-end pl-0 d-flex a-borderRightRadius ">
+              <div class="a-diaHeading ">
+                <h5 class="a-colorBlue">Dia</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row pl-0 a-rowBorder-portal mt-3 flex-nowrap">
+            <div class="col-lg-2 col-md-2 col-sm-2 pr-0 ">
+              <div class="row twentyEight-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col1-portal ">
+                  <h6 class="mb-0">09:00</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row seventyOne-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col2-portal">
+                  <h6>09:30</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row fiftyEight-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col3-portal ">
+                  <h6>10:00</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed "></div>
+              </div>
+              <div class="row eightySix-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col4-portal ">
+                  <h6>11:00</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row seventyFive-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col5-portal ">
+                  <h6>11:30</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row seventyOne-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col6-portal ">
+                  <h6>12:00</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row fiftyEight-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col3-portal ">
+                  <h6>12:30</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row seventyFive-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col5-portal ">
+                  <h6>1:00</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row seventyOne-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col6-portal ">
+                  <h6>1:30</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row seventyOne-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col6-portal ">
+                  <h6>2:00</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row fiftyEight-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col3-portal ">
+                  <h6>2:30</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row seventyFive-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col5-portal ">
+                  <h6>3:00</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row seventyOne-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col6-portal ">
+                  <h6>3:30</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row eightySix-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col4-portal ">
+                  <h6>4:00</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+              <div class="row fiftyEight-portal flex-nowrap">
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+                <div class="col-lg-7 col-md-7 col-sm-8 text-center col3-portal ">
+                  <h6>4:30</h6>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="col-lg-9 col-md-9 col-sm-10 borderCol8-portal ">
+              <div class="row twentyEight-portal row1Style-portal"></div>
+              <div class="row seventyOne-portal row1Style-portal"></div>
+              <div class="row fiftyEight-portal row3Style-portal text-center bg-light ">
+                <h5 class="">Disciplina</h5>
+              </div>
+              <div class="row bg-white twentyEight-portal"></div>
+              <div class="row fiftyEight-portal row4Style-portal bg-light ">
+                <h5 class="">Disciplina</h5>
+              </div>
+              <div class="row seventyOne-portal mt-1 row5style-portal"></div>
+              <div class="row seventyOne-portal row6style-portal"></div>
+              <div class="row fiftyEight-portal row7Style-portal bg-light ">
+                <h5 class="">Disciplina</h5>
+              </div>
+              <div class="row seventyOne-portal mt-1 row5style-portal"></div>
+              <!-- progress bar -->
+              <div class="row seventyOne-portal row6style-portal"></div> <!-- progress end bar -->
+              <div class="row seventyOne-portal row6style-portal"></div>
+              <div class="row fiftyEight-portal row8Style-portal bg-light ">
+                <h5 class="">Disciplina</h5>
+              </div>
+              <div class="row seventyOne-portal mt-1 row5style-portal"></div>
+              <div class="row seventyOne-portal row6style-portal"></div>
+              <div class="row bg-white twentyEight-portal"></div>
+              <div class="row fiftyEight-portal row8Style-portal bg-light ">
+                <h5 class="">Disciplina</h5>
+              </div>
+              <div class="row fiftyEight-portal row9Style-portal bg-light ">
+                <h5 class="">Disciplina</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-4">
+            <div class="col-md-9 col-lg-9 col-sm-12">
+              <div class="d-flex justify-content-around flex-nowrap">
+                <div><img src="Assets/icon/Untitled-5.png" class="img-fluid iconSize-portal"
+                    alt="">&nbsp;&nbsp;<span>Disciplina</span></div>
+                <div><img src="Assets/icon/Untitled.png" class="img-fluid iconSize-portal"
+                    alt="">&nbsp;&nbsp;<span>Disciplina</span></div>
+                <div><img src="Assets/icon/3.png" class="img-fluid iconSize-portal"
+                    alt="">&nbsp;&nbsp;<span>Disciplina</span></div>
+                <div><img src="Assets/icon/3.png" class="img-fluid iconSize-portal"
+                    alt="">&nbsp;&nbsp;<span>Disciplina</span></div>
+                <div><img src="Assets/icon/5.png" class="img-fluid iconSize-portal"
+                    alt="">&nbsp;&nbsp;<span>Disciplina</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 8 col main - end - div -->
+
+      </div>
+    </div>
+    <!-- main contaier end  -->
+
+  </div>
+  <script>
+      function showOrHideDiv() {
+        var v = document.getElementById("show");
+        var icon = document.getElementById("icon1");
+        if (v.style.display === "block") {
+          v.style.display = "none";
+        
+
+          icon.style.transform = "rotate(360deg)";
+          console.log("open");
+        } else {
+          v.style.display = "block";
+          icon.style.transform = "rotate(180deg)";
+        
+
+          console.log("close");
+        }
+      }
+
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+     <script src="Assets/js/calendar.js"></script>
+     <script src="Assets/js/calender1.js"></script>
+</body>
+
+</html>
