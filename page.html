@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./Assets/css/page.css">
+  <script src="./Assets/js/page.js"></script>
+</head>
+<body>
+
+<div class="container pt-5">
+<div class="text-center color-primary colr">
+    <h3 class="font-weigt">Pessoas authoriadas a retirar a(o) estudante</h3>
+</div>
+<div class="text-center color-primary colr1 pb-4">
+    <h4 class="font-weigt">Educação infantil</h4>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pl-0 pr-0">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1" required>
+      </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="RG" aria-label="Username" aria-describedby="basic-addon1"  required>
+          </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0 padding-left">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Grau de parentesco" aria-label="Username" aria-describedby="basic-addon1"  required>
+          </div>
+    </div> 
+</div>
+<hr>
+<div id="appendInputs">
+
+</div>
+<div class="text-center">
+    <button type="button" class="btn btn-sm pl-5 pr-5 bg-colr" onclick="addLine()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+</div>
+
+
+<div class="text-center color-primary pb-2 pt-2 colr">
+    <h3 class="font-weigt">Responsável pela tranporte escolar (perua/van)</h3>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pl-0 pr-0">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1"  required>
+      </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="RG" aria-label="Username" aria-describedby="basic-addon1"  required>
+          </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0 padding-left">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Grau de parentesco" aria-label="Username" aria-describedby="basic-addon1"  required>
+          </div>
+    </div> 
+
+</div>
+<div class="colr text-center">
+<h6>Confirmação dos pais ou responsáveis</br>
+Solicitamos que quaisquer alterações a estes dados sejam comunicadas ao Colégio.</h6>
+</div>
+<div class="text-center">
+    <button type="button" class="btn btn-sm bg-colr pl-4 pr-4">Confirmação &nbsp;
+            <input id="checkbtn-portal-2" type="checkbox" value="1"   required/>
+            <label class="checkbtn-portal-lock-2 text-center " for="checkbtn-portal-2">Y</label>
+    </button>
+</div>
+<div class="text-center">
+    <button type="submit" value="Submit" class="btn btn-sm bg-colr pl-3 pr-3 mt-2">SALVAR</button>
+</div>
+
+</div>
+<br>
+<br>
+<br>
+</body>
+</html>

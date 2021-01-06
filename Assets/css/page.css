@@ -1,0 +1,46 @@
+.font-weigt{
+font-weight: 700;
+}
+.colr{
+    color: #050366;
+}
+.bg-colr{
+    background-color: #050366;
+    color: white;
+}
+.bg-colr:hover{
+    background-color: #050366;
+    color: white;
+}
+.colr1{
+    color:#C2984E;
+}
+.checkbtn-portal-lock-2 { 
+    display: inline-block;
+    background: white;
+    margin: 0px;
+    font-size: 11px;
+    color: black;
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+ 
+ #checkbtn-portal-2 {
+    display: none;
+    
+  }
+  #checkbtn-portal-2:checked + label {
+    background: #ff5b5b;
+  }
+   
+
+
+@media (max-width:580px){
+.padding-left{
+    padding-left: 15px !important;
+}
+}
