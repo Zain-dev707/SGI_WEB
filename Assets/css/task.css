@@ -4,6 +4,14 @@
     width: 120px;
     border: none;
 }
+.main-heading-portal-1{
+     width: 85px;
+}
+.height-col-side-portal{
+    height: 50px;
+    border-bottom:2px dashed;
+    color: #a2c0d4;
+}
 /* .heading-portal:active{
     background-color:black ;
     color: white;
@@ -30,9 +38,28 @@
     border-bottom: 2px solid red;
 }
 .border-green-portal{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #73e8cd;
+}
+.orange-portal{
+    border-bottom: 2px solid orangered !important;
+}
+.blue-portal{
+      border-bottom:2px solid #4e97ff;
+}
+.light-blue-border{
+    border-bottom:2px solid #73e8cd ;
+}
+.purple-border{
+    border-bottom: 2px solid #6665dd;
 }
 
 .color-black{
     color: black;
+}
+.time-font-size-portal{
+    font-size: 0.8rem;
+}
+.col-eight-portal{
+    top: 38px;
+    padding-left: 8px
 }
