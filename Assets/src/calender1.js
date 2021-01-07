@@ -14,10 +14,10 @@ var data = [{
     date: new Date(year, month - 1, date + 1),
     value: '吃饭睡觉打豆豆'
 }, {
-    date: '2018-09-1',
-    value: '2018-09-1'
+    date: '2020-11-1',
+    value: '2020-11-1'
 }];
-var monthArray1 = ['','January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var monthArray1 = ['','Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 // inline
 var $ca = $('#one').calendar({
     // view: 'month',
@@ -26,8 +26,8 @@ var $ca = $('#one').calendar({
     // startWeek: 0,
     // selectedRang: [new Date(), null],
     data: data,
-    monthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    date: new Date(2018, 08, 1),
+    monthArray: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    date: new Date(2020, 11, 1),
     onSelected: function (view, date, data) {
         console.log('view:' + view)
         console.log('date:' + date)
