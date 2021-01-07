@@ -1,7 +1,6 @@
 /*!
- * @authors yusen
- * @date    2017-01-04 21:34:19
- * @github  https://github.com/yscoder/Calendar
+ * @authors TB
+ * @date    2020-11-04 21:34:19
  */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -14,7 +13,7 @@
 }(this, function ($) {
 
     // default config
-    var monthArray1 = ['','January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Setembro', 'October', 'November', 'December'];
+    var monthArray1 = ['','Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
     var defaults = {
 
         // 宽度
@@ -48,10 +47,10 @@
         startWeek: 0,
 
         // 星期格式
-        weekArray: ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sab.', 'Dom.'],
+        weekArray: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sab.', 'Dom.'],
 
         // 月份格式
-    monthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Setembro', 'October', 'November', 'December'],
+    monthArray: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
        
         // 设置选择范围
         // 格式：[开始日期, 结束日期]
@@ -61,7 +60,7 @@
 
         // 日期关联数据 [{ date: string, value: object }, ... ]
         // 日期格式与 format 一致
-        // 如 [ {date: '2015/11/23', value: '面试'} ]
+        // 如 [ {date: '2020/11/23', value: '面试'} ]
         data: null,
 
         // 展示关联数据
