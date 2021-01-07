@@ -485,3 +485,14 @@
 {
     background-color: #1A5A82;
 }
+
+.maxwidth-17-portal
+{
+  max-width: 18%;
+  /* padding-left: 15px; */
+}
+
+.justify-portal
+{
+  justify-content: space-evenly;
+}
