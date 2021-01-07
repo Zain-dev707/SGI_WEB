@@ -139,6 +139,9 @@
   cursor: pointer;
  
 }
+.bg-transparent{
+  background-color: none !important;
+}
 
 .light{
   background-color: #f1f1f1;
