@@ -196,7 +196,7 @@ li {
 
 .calendar .calendar-views .selected {
     color: white;
-    background: #2E86C1 !important;
+    background: lightgray !important;
 }
 
 .calendar .calendar-views .dot {
