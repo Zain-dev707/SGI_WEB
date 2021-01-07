@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="./Assets/css/report.css">
   <link rel="stylesheet" href="Assets/css/index.css">
-  <link rel="stylesheet" href="./Assets/src/calendar.css">
+  <link rel="stylesheet" href="./Assets/css/calendar.css">
 
  
 
@@ -38,120 +38,19 @@
 <body class="bg-light">
   <div class="pl-5 pr-5">
     <!-- navbar start  -->
-    <nav class="navbar navbar-expand-xl navbar-light pb-0">
-      <a class="navbar-brand" href="#"><img src="./Assets/icon/logo.png" class="mainlogo-portal"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="ml-4">
-        <form class="form-inline w-218-Z">
-          <Span class="fa fa-search text-dark ml-3 " style="z-index: 1;position: absolute;"></Span>
-          <input class="form-control w-218-Z pl-5 z-border-none" type="search" placeholder="Search"
-            aria-label="Search">
-
-        </form>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-        <ul class="navbar-nav ml-auto mt-1 ">
-          <li class="nav-item active ml-2">
-            <button class="z-button-white " href="#"> <span class="fa fa-bell-o  font-size-bell-icon-portal "></span><Span
-                class="z-circle-yellow"></Span></button>
-          </li>
-          <li class="nav-item ml-2">
-            <a class="nav-link" href="#"><img src="./Assets/icon/icon 2.png" class="z-w-icons"></a>
-          </li>
-
-          <li class="nav-item ml-2">
-            <a class="nav-link disabled" href="#"><img src="./Assets/icon/icon-01.png" class="z-w-icons-001"></a>
-          </li>
-          <li class="nav-item ml-2">
-            <a class="nav-link disabled" href="#"><img src="./Assets/icon//face-01.png" class="z-w-icons-001"></a>
-          </li>
-          <li class="nav-item dropdown ml-2">
-            <a class="nav-link dropdown-toggle mt-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <b> Galante</b>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-
-      </div>
-    </nav>
+    <div id="NavCode"></div>
     <!-- navbar end  -->
     <!-- main contaier start  -->
     <div class="container-fluid ">
 
      
-        <div class="row">
-          <div class="col-md-6 pt-2 pl-0">
-            <div class="d-flex">
-              <h4 class="text-dark">Tarefas de hoje</h4>
-              <div class="badge badge-warning z-badge ml-5  mt-2  mb-2 set-z-top"><i>6</i></div>
-            </div>
-          </div>
-          <div class="col-md-6 pt-2 text-end mb-4 ">
-            <button type="button" class="btn btn-light border"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp; Voltar</button>
-          </div>
-        </div>
+    
         <div class="row ">
         <!-- calender  portion start  -->
         <div class="col-md-3 bg-white pt-3 ">
-          <!-- start -->
-          <div id="demo">
-         
-            <div id="one"></div>
-    
-            
-        </div>
-            
-       
-          <!-- end -->
-          <div class="d-flex mt-5">
-            <div><img src="Assets/icon/dashboard.png" class="img-fluid iconSize1"
-              alt="">
-            &nbsp; &nbsp;<span>Dashboard</span>
-          </div>
-          <div class="iconUper">
-            <i class="fa fa-angle-down angle-down" aria-hidden="true" onclick="showOrHideDiv()" id="icon1"></i>
-            
-        </div>
-          </div>
-        <div id="show" >
-                <!-- 2 -->
-                <div class="sidebar-padding-Portap"><img src="Assets/icon/calender.png" class="img-fluid iconSize1"
-                  alt="">
-                &nbsp; &nbsp;<span>Categorias</span>
-              </div>
-              <!-- 3 -->
-              <div class="sidebar-padding-Portap"><img src="Assets/icon/people.png" class="img-fluid iconSize1"
-                alt="">
-              &nbsp; &nbsp;<span>Professores</span>
-            </div>
-            <!-- 4 -->
-            <div class="sidebar-padding-Portap"><img src="Assets/icon/cap.png" class="img-fluid iconSize1"
-              alt="">
-            &nbsp; &nbsp;<span>Alunos</span>
-          </div>
-          <!-- 5 -->
-          <div class="sidebar-padding-Portap"><img src="Assets/icon/message.png" class="img-fluid iconSize1"
-            alt="">
-          &nbsp; &nbsp;<span>Responsaváve Financeiro</span>
-        </div>
-        <!-- 6 -->
-        <div class="sidebar-padding-Portap"><img src="Assets/icon/setting.png" class="img-fluid iconSize1"
-          alt="">
-        &nbsp; &nbsp;<span>Configuracoes</span>
-      </div>
-        </div>
+          <!-- SideBAr Code start -->
+          <div id="sidebarCode"></div>
+          <!-- SideBAr Code end -->
            
          
           </div>
@@ -563,7 +462,9 @@
     }
 
 </script>
-<!-- Optional JavaScript -->
+<script src="./Assets/js/nabvar.js"></script>
+  <script src="./Assets/js/sidebar.js"></script>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -575,8 +476,8 @@
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"></script>
   <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
-  <script src="./Assets/src/calendar.js"></script>
-  <script src="./Assets/src/calender1.js"></script>
+  <script src="./Assets/js/calendar.js"></script>
+  <script src="./Assets/js/calender1.js"></script>
 </body>
 
 
