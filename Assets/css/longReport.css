@@ -474,8 +474,6 @@
     margin-left: 28px;
     margin-top: -12px;
                       }
-<<<<<<< HEAD
-=======
 
 
 .bg-color-portal
@@ -487,4 +485,14 @@
 {
     background-color: #1A5A82;
 }
->>>>>>> b492bb39add52ef25e759fd45add77516f820018
+
+.maxwidth-17-portal
+{
+  max-width: 18%;
+  /* padding-left: 15px; */
+}
+
+.justify-portal
+{
+  justify-content: space-evenly;
+}

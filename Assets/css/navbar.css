@@ -113,7 +113,8 @@
   justify-content: space-around;
 }
 .col-lg-portal{
-  max-width: 11.666667%;
+  max-width: 11.666667% !important;
+  cursor: pointer;
   
   
 }   
@@ -131,14 +132,14 @@
 .text-decoration{
   text-decoration: none !important;
 }
-.btn {
+/* .btn1-portal {
   border: none;
   outline: none;
 
   background-color: #f1f1f1;
   cursor: pointer;
  
-}
+} */
 .bg-transparent{
   background-color: none !important;
 }
