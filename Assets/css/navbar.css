@@ -139,10 +139,7 @@
   cursor: pointer;
  
 }
-.active, .btn:hover {
-  background-color: #343a40;
-  color: white;
-}
+
 .light{
   background-color: #f1f1f1;
 }

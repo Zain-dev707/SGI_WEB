@@ -59,7 +59,7 @@
 .purple-border{
     border-bottom: 2px solid #6665dd;
 }
-.color-bg:{
+.color-bg{
     background-color: #343a40!important;
     color: white;
 }
@@ -84,3 +84,7 @@
 .main-row-portal{
     margin-left: 68px;
 }
+.active, .btn1-portal:hover {
+    background-color: #343a40;
+    color: white;
+  }
