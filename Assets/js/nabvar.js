@@ -52,7 +52,7 @@ header.innerHTML = `<!-- navbar start  -->
 <div class="container-fluid">
   
   
-  <div class="row">
+  <div class="row mb-2">
     <div class="col-md-6 pt-2 pl-0">
       <div class="d-flex">
         <h4 class="text-dark">Tarefas de hoje</h4>
