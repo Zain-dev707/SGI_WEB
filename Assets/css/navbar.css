@@ -115,9 +115,34 @@
 .col-lg-portal{
   max-width: 11.666667%;
   
+  
 }   
 .top-heading-portal{
  
   height: 42px;
 
+}
+.top-heading-padding-portal{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+.text-decoration{
+  text-decoration: none !important;
+}
+.btn {
+  border: none;
+  outline: none;
+
+  background-color: #f1f1f1;
+  cursor: pointer;
+ 
+}
+.active, .btn:hover {
+  background-color: #343a40;
+  color: white;
+}
+.light{
+  background-color: #f1f1f1;
 }
