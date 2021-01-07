@@ -8,15 +8,12 @@
     background-color: #1A5A82;
 }
 
+table td
+{
+    padding: 0.20rem !important;
+}
 
 
 
 
-@media (min-width: 1100px)
 
-/* {
-    .input-Width-portal
-    {
-        max-width: 33% !important;
-    }
-} */

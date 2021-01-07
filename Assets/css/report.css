@@ -421,3 +421,26 @@
    .width-text-box-portal{
      width: 100%;
    }
+
+
+
+   .bg-color-portal
+{
+    background-color: #4097D8;
+}
+
+.bg-dropdown-Portal
+{
+    background-color: #1A5A82;
+}
+
+.maxwidth-17-portal
+{
+  max-width: 18%;
+  /* padding-left: 15px; */
+}
+
+.justify-portal
+{
+  justify-content: space-evenly;
+}
