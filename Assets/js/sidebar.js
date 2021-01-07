@@ -38,7 +38,7 @@ header.innerHTML = `  <!-- start -->
 <!-- 5 -->
 <div class="sidebar-padding-Portal"><img src="Assets/icon/message.png" class="img-fluid iconSize1-portal"
   alt="">
-&nbsp; &nbsp;<span>Responsaváve Financeiro</span>
+&nbsp; &nbsp;<span>Responsável Financeiro</span>
 </div>
 <!-- 6 -->
 <div class="sidebar-padding-Portal"><img src="Assets/icon/setting.png" class="img-fluid iconSize1-portal"
