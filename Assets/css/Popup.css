@@ -8,9 +8,28 @@
     background-color: #1A5A82;
 }
 
+.table-Text-color-portal
+{
+    color: #4097D8;
+}
+
+.vertical-text-portal
+{
+    color: #4097D8;
+    height: 100px;
+    width: 10px;  
+    transform: rotate(-90deg);
+    padding-right: 180px;
+}
+
 table td
 {
     padding: 0.20rem !important;
+}
+
+.Width-eighty-Portal
+{
+    max-width: 80px;
 }
 
 
