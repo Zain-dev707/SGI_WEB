@@ -3,7 +3,7 @@ function addLine(){
     let abc = document.getElementById("appendInputs");
 var element = document.createElement("div");
  element.innerHTML = `<div class="text-center color-primary colr">
- <button type="button" class="close ml-auto" aria-label="Close" onclick="closeBtn()">
+ <button type="button" class="close close-portal ml-auto" aria-label="Close" onclick="closeBtn(this)">
         <span aria-hidden="true">&times;</span>
       </button>
     <h3 class="font-weigt">Pessoas authoriadas a retirar a(o) estudante</h3>
@@ -31,16 +31,9 @@ var element = document.createElement("div");
 </div>
 <hr>`;
 abc.appendChild(element);
-
-console.log(element);
 element.setAttribute("class" ,"addDiv");
 }
 
-function closeBtn(){
-    var divsToHide = document.getElementsByClassName("addDiv"); //divsToHide is an array
-    for(var i = 0; i < divsToHide.length-1; i++){
-        // divsToHide[i].style.visibility = "hidden"; // or
-        divsToHide[i].style.display = "none"; // depending on what you're doing
-    }
-
+function closeBtn(e){
+    e.parentElement.parentElement.remove();
 }
