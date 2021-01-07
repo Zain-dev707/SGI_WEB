@@ -425,6 +425,7 @@
   padding-left: 40%;
 }
 .div-text-arranged-portal{
+  padding-top: 5px;
     white-space: nowrap; 
     width: 100%; 
     overflow: hidden;
@@ -434,17 +435,18 @@
    
 }
 .padding-text-succo-portal{
-    padding-right:11% ;
+    padding-right:8% ;
 }
 .font-size-for-col-portal{
     font-size: 14px;
 }
 .mb-portal-set{
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 
 }
 .m-top-set-portal{
-    margin-top: 13px;
+  margin-top: 3px;
+  padding-bottom: 10px!important;
 }
 .set-padding-time-portal{
     padding-left: 20px!important;
@@ -455,4 +457,20 @@
     font-weight: bold;
     padding-left: 4%;
 }
-
+.padding-left-portal-text{
+  padding-left: 10px;
+}
+.m-top-min-portal{
+  margin-top: -8px!important;
+}
+.setinpur-time-portal{
+  font-size:8px;
+                        width: 30px;
+                        height: 15px;
+                        margin-left: 0%;
+   }
+  .col-img-head-portal{
+    width: 30px!important;
+    margin-left: 28px;
+    margin-top: -12px;
+                      }

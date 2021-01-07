@@ -112,3 +112,12 @@
 .justify-content-around{
   justify-content: space-around;
 }
+.col-lg-portal{
+  max-width: 11.666667%;
+  
+}   
+.top-heading-portal{
+ 
+  height: 42px;
+
+}
