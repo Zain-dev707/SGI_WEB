@@ -38,9 +38,8 @@ element.setAttribute("class" ,"addDiv");
 
 function closeBtn(){
     var divsToHide = document.getElementsByClassName("addDiv"); //divsToHide is an array
-    for(var i = 0; i < divsToHide.length-1; i++){
-        // divsToHide[i].style.visibility = "hidden"; // or
-        divsToHide[i].style.display = "none"; // depending on what you're doing
+    for(var i = 0; i < divsToHide.length; i--){
+        divsToHide.style.display = "none"; // depending on what you're doing
     }
 
 }
