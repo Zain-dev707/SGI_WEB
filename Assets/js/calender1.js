@@ -6,19 +6,23 @@ var date = now.getDate();
 
 var data = [{
     date: year + '-' + month + '-' + (date - 1),
-    value: 'hello'
+    value: 'Yesterday'
 }, {
     date: year + '-' + month + '-' + date,
-    value: '上班'
+    value: 'Today'
 }, {
     date: new Date(year, month - 1, date + 1),
-    value: '吃饭睡觉打豆豆'
+    value: 'Tomarrow'
 }, {
-    date: '2020-09-1',
-    value: '2020-09-1'
+    //date: '2020-11-1',
+    //value: '2020-11-1'
 }];
-var monthArray1 = ['','January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+// console.log(date+"  "+month);
+
+var monthArray1 = ['','Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 // inline
+$("#selected-change").html(date+" "+ monthArray1[Number(month)]);
 var $ca = $('#one').calendar({
     // view: 'month',
     width: 320,
@@ -26,8 +30,8 @@ var $ca = $('#one').calendar({
     // startWeek: 0,
     // selectedRang: [new Date(), null],
     data: data,
-    monthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    date: new Date(2020, 12, 1),
+    monthArray: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    date: new Date(),
     onSelected: function (view, date, data) {
         console.log('view:' + view)
         console.log('date:' + date)
@@ -37,12 +41,18 @@ var $ca = $('#one').calendar({
           
             
             $(".push-date-formte").html('<span class="m">'+monthArray1[Number(getm)]+'</span>');
+            var str = date+' ';
+            var getda = str.split(" ");
+            // console.log(getda);
+            $("#selected-change").html(getda[2]+" "+ monthArray1[Number(getm)]);
             },300);
+           
     },
     viewChange: function (view, y, m) {
         console.log(view, y, m)
 
-    }
+    },
+    
 });
 
 // picker
