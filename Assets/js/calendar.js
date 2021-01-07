@@ -1,7 +1,7 @@
 /*!
  * @authors TB
- * @date    2020-11-12 21:34:19
-  */
+ * @date    2020-11-04 21:34:19
+ */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         define('calendar', ['jquery'], factory);
@@ -13,7 +13,7 @@
 }(this, function ($) {
 
     // default config
-    var monthArray1 = ['','January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var monthArray1 = ['','Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
     var defaults = {
 
         // 宽度
@@ -47,15 +47,15 @@
         startWeek: 0,
 
         // 星期格式
-        weekArray: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sexta', 'Dom'],
+        weekArray: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sab.', 'Dom.'],
 
         // 月份格式
-    monthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    monthArray: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
        
         // 设置选择范围
         // 格式：[开始日期, 结束日期]
         // 开始日期为空，则无上限；结束日期为空，则无下限
-        // 如设置2015年11月23日以前不可选：[new Date(), null] or ['2020/11/23']
+        // 如设置2015年11月23日以前不可选：[new Date(), null] or ['2015/11/23']
         selectedRang: null,
 
         // 日期关联数据 [{ date: string, value: object }, ... ]
@@ -115,8 +115,8 @@
         NEW_DAY_CLASS = 'new',
         TODAY_CLASS = 'now',
         SELECT_CLASS = 'selected',
-        MARK_DAY_HTML = '<i class="dot"></i>',
-        DATE_DIS_TPL = '<span style="display:none" class="m getmonth">{month}</span>/{year}',
+        MARK_DAY_HTML = '',
+        DATE_DIS_TPL = '<span style="display:none" class="m getmonth">{month}</span>/ {year}',
 
         ITEM_STYLE = 'style="width:{w}px;height:{h}px;line-height:{h}px; font-size:12px;" ',
         WEEK_ITEM_TPL = '<li ' + ITEM_STYLE + '>{wk}</li>',
@@ -130,10 +130,10 @@
             '<div class="calendar-hd">',
             '<a href="javascript:;"  class="calendar-display" onclick="to_view_change()"><span class="push-date-formte"></span></a>',
             '<a href="javascript:;" data-calendar-display-date class="calendar-display display-new">',
-            '<span class="m">{mm}</span>/{yyyy}',
+            '<span class="m">{mm}</span>/ {yyyy}',
             '</a>',
             
-            '<div class="calendar-arrow">',
+            '<div class="calendar-arrow mt-2">',
             '<span class="prev" data-calendar-arrow-date>{prev}</span>',
             '<span class="next" data-calendar-arrow-date>{next}</span>',
             '</div>',
@@ -154,8 +154,8 @@
             '<ol class="calendar-ct month-items">{month}</ol>',
             '</div>',
             '</div>',
-            '</div>',
-            '<div class="calendar-label"><p>HelloWorld</p><i></i></div>'
+            '</div>'
+            // '<div class="calendar-label"><p>HelloWorld</p><i></i></div>'
         ],
         OS = Object.prototype.toString;
 
@@ -624,10 +624,10 @@
                 y = Number(arr[2]);
                 
                // m = monthArray[m];
-                console.log(arr);
-                console.log(m+"----"+y);
+                // console.log(arr);
+                // console.log(m+"----"+y);
                
-                console.log($(".calendar-display").html());
+                // console.log($(".calendar-display").html());
                // $(".push-date-formte").html('<span class="m">'+monthArray1[m]+'</span>');
                 window.setTimeout(function(){
                     var getm = $(".getmonth").text();
@@ -645,5 +645,192 @@
                 toggleClass = function () {
                     this.$dateItems.children(':eq(1)')
                         .find('[' + ITEM_DAY + ']:not(.' + NEW_DAY_CLASS + ', .' + OLD_DAY_CLASS + ')')
-   ?e:null;if((i||!/destroy|hide/.test(e))&&(i||(i=new p(this,s),t(this).data(n,i)),"string"==typeof e)){if("undefined"==typeof i[e])throw new TypeError('No method named "'+e+'"');i[e]()}})},s(p,null,[{key:"VERSION",get:function(){return"4.0.0"}},{key:"Default",get:function(){return l}},{key:"NAME",get:function(){return e}},{key:"DATA_KEY",get:function(){return n}},{key:"Event",get:function(){return _}},{key:"EVENT_KEY",get:function(){return i}},{key:"DefaultType",get:function(){return h}}]),p}(U);return t.fn[e]=g._jQueryInterface,t.fn[e].Constructor=g,t.fn[e].noConflict=function(){return t.fn[e]=o,g._jQueryInterface},g}(e),K=function(t){var e="scrollspy",n="bs.scrollspy",i="."+n,o=t.fn[e],a={offset:10,method:"auto",target:""},l={offset:"number",method:"string",target:"(string|element)"},h={ACTIVATE:"activate"+i,SCROLL:"scroll"+i,LOAD_DATA_API:"load"+i+".data-api"},c="dropdown-item",u="active",f={DATA_SPY:'[data-spy="scroll"]',ACTIVE:".active",NAV_LIST_GROUP:".nav, .list-group",NAV_LINKS:".nav-link",NAV_ITEMS:".nav-item",LIST_ITEMS:".list-group-item",DROPDOWN:".dropdown",DROPDOWN_ITEMS:".dropdown-item",DROPDOWN_TOGGLE:".dropdown-toggle"},d="offset",_="position",g=function(){function o(e,n){var i=this;this._element=e,this._scrollElement="BODY"===e.tagName?window:e,this._config=this._getConfig(n),this._selector=this._config.target+" "+f.NAV_LINKS+","+this._config.target+" "+f.LIST_ITEMS+","+this._config.target+" "+f.DROPDOWN_ITEMS,this._offsets=[],this._targets=[],this._activeTarget=null,this._scrollHeight=0,t(this._scrollElement).on(h.SCROLL,function(t){return i._process(t)}),this.refresh(),this._process()}var g=o.prototype;return g.refresh=function(){var e=this,n=this._scrollElement===this._scrollElement.window?d:_,i="auto"===this._config.method?n:this._config.method,s=i===_?this._getScrollTop():0;this._offsets=[],this._targets=[],this._scrollHeight=this._getScrollHeight(),t.makeArray(t(this._selector)).map(function(e){var n,r=P.getSelectorFromElement(e);if(r&&(n=t(r)[0]),n){var o=n.getBoundingClientRect();if(o.width||o.height)return[t(n)[i]().top+s,r]}return null}).filter(function(t){return t}).sort(function(t,e){return t[0]-e[0]}).forEach(function(t){e._offsets.push(t[0]),e._targets.push(t[1])})},g.dispose=function(){t.removeData(this._element,n),t(this._scrollElement).off(i),this._element=null,this._scrollElement=null,this._config=null,this._selector=null,this._offsets=null,this._targets=null,this._activeTarget=null,this._scrollHeight=null},g._getConfig=function(n){if("string"!=typeof(n=r({},a,n)).target){var i=t(n.target).attr("id");i||(i=P.getUID(e),t(n.target).attr("id",i)),n.target="#"+i}return P.typeCheckConfig(e,n,l),n},g._getScrollTop=function(){return this._scrollElement===window?this._scrollElement.pageYOffset:this._scrollElement.scrollTop},g._getScrollHeight=function(){return this._scrollElement.scrollHeight||Math.max(document.body.scrollHeight,document.documentElement.scrollHeight)},g._getOffsetHeight=function(){return this._scrollElement===window?window.innerHeight:this._scrollElement.getBoundingClientRect().height},g._process=function(){var t=this._getScrollTop()+this._config.offset,e=this._getScrollHeight(),n=this._config.offset+e-this._getOffsetHeight();if(this._scrollHeight!==e&&this.refresh(),t>=n){var i=this._targets[this._targets.length-1];this._activeTarget!==i&&this._activate(i)}else{if(this._activeTarget&&t<this._offsets[0]&&this._offsets[0]>0)return this._activeTarget=null,void this._clear();for(var s=this._offsets.length;s--;){this._activeTarget!==this._targets[s]&&t>=this._offsets[s]&&("undefined"==typeof this._offsets[s+1]||t<this._offsets[s+1])&&this._activate(this._targets[s])}}},g._activate=function(e){this._activeTarget=e,this._clear();var n=this._selector.split(",");n=n.map(function(t){return t+'[data-target="'+e+'"],'+t+'[href="'+e+'"]'});var i=t(n.join(","));i.hasClass(c)?(i.closest(f.DROPDOWN).find(f.DROPDOWN_TOGGLE).addClass(u),i.addClass(u)):(i.addClass(u),i.parents(f.NAV_LIST_GROUP).prev(f.NAV_LINKS+", "+f.LIST_ITEMS).addClass(u),i.parents(f.NAV_LIST_GROUP).prev(f.NAV_ITEMS).children(f.NAV_LINKS).addClass(u)),t(this._scrollElement).trigger(h.ACTIVATE,{relatedTarget:e})},g._clear=function(){t(this._selector).filter(f.ACTIVE).removeClass(u)},o._jQueryInterface=function(e){return this.each(function(){var i=t(this).data(n);if(i||(i=new o(this,"object"==typeof e&&e),t(this).data(n,i)),"string"==typeof e){if("undefined"==typeof i[e])throw new TypeError('No method named "'+e+'"');i[e]()}})},s(o,null,[{key:"VERSION",get:function(){return"4.0.0"}},{key:"Default",get:function(){return a}}]),o}();return t(window).on(h.LOAD_DATA_API,function(){for(var e=t.makeArray(t(f.DATA_SPY)),n=e.length;n--;){var i=t(e[n]);g._jQueryInterface.call(i,i.data())}}),t.fn[e]=g._jQueryInterface,t.fn[e].Constructor=g,t.fn[e].noConflict=function(){return t.fn[e]=o,g._jQueryInterface},g}(e),V=function(t){var e="bs.tab",n="."+e,i=t.fn.tab,r={HIDE:"hide"+n,HIDDEN:"hidden"+n,SHOW:"show"+n,SHOWN:"shown"+n,CLICK_DATA_API:"click.bs.tab.data-api"},o="dropdown-menu",a="active",l="disabled",h="fade",c="show",u=".dropdown",f=".nav, .list-group",d=".active",_="> li > .active",g='[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]',p=".dropdown-toggle",m="> .dropdown-menu .active",v=function(){function n(t){this._element=t}var i=n.prototype;return i.show=function(){var e=this;if(!(this._element.parentNode&&this._element.parentNode.nodeType===Node.ELEMENT_NODE&&t(this._element).hasClass(a)||t(this._element).hasClass(l))){var n,i,s=t(this._element).closest(f)[0],o=P.getSelectorFromElement(this._element);if(s){var h="UL"===s.nodeName?_:d;i=(i=t.makeArray(t(s).find(h)))[i.length-1]}var c=t.Event(r.HIDE,{relatedTarget:this._element}),u=t.Event(r.SHOW,{relatedTarget:i});if(i&&t(i).trigger(c),t(this._element).trigger(u),!u.isDefaultPrevented()&&!c.isDefaultPrevented()){o&&(n=t(o)[0]),this._activate(this._element,s);var g=function(){var n=t.Event(r.HIDDEN,{relatedTarget:e._element}),s=t.Event(r.SHOWN,{relatedTarget:i});t(i).trigger(n),t(e.
-    
+                        .removeClass(SELECT_CLASS)
+                        .filter(function (index) {
+                            return parseInt(this.innerHTML) === d;
+                        }).addClass(SELECT_CLASS);
+                };
+
+            if (type) {
+                var ret = this.updateDateView(y, m, {
+                    'old': 'prev',
+                    'new': 'next'
+                }[type], toggleClass);
+                y = ret.y;
+                m = ret.m;
+                this.options.viewChange('date', y, m);
+            } else {
+                toggleClass.call(this);
+            }
+
+            return new Date(y, m - 1, d);
+        },
+        showLabel: function (event, view, date, data) {
+            var $lbl = this.$label;
+
+            $lbl.find('p').html(this.options.label.repeat({
+                m: view,
+                d: date.format(this.options.format),
+                v: data
+            }).replace(/\n/g, '<br>'));
+
+            var w = $lbl.outerWidth(),
+                h = $lbl.outerHeight();
+
+            $lbl.css({
+                left: (event.pageX - w / 2) + 'px',
+                top: (event.pageY - h - 20) + 'px',
+                zIndex: this.options.zIndex + 1
+            }).show();
+        },
+        hasLabel: function () {
+            if (this.options.label) {
+                $('body').append(this.$label);
+                return true;
+            }
+            return false;
+        },
+        event: function () {
+            var _this = this,
+                vc = _this.options.viewChange;
+
+            // view change
+            _this.$element.on('click', DISPLAY_VD, function () {
+                var arr = _this.getDisDateValue();
+                _this.updateMonthView(arr[0], arr[1]);
+
+                vc('month', arr[0], arr[1]);
+
+            }).on('click', DISPLAY_VM, function () {
+                var y = this.innerHTML;
+
+                _this.updateDateView(y);
+                vc('date', y);
+            });
+
+            // arrow
+            _this.$element.on('click', ARROW_DATE, function () {
+                var arr = _this.getDisDateValue(),
+                    type = getClass(this),
+                    y = arr[0],
+                    m = arr[1];
+
+                var d = _this.updateDateView(y, m, type, function () {
+                    vc('date', d.y, d.m);
+                });
+
+            }).on('click', ARROW_MONTH, function () {
+
+                var y = Number(_this.$disMonth.html()),
+                    type = getClass(this);
+
+                y = type === 'prev' ? y - 1 : y + 1;
+                _this.updateMonthView(y);
+                vc('month', y);
+            });
+
+            // selected
+            _this.$element.on('click', '[' + ITEM_DAY + ']', function () {
+                var d = parseInt(this.innerHTML),
+                    cls = getClass(this),
+                    type = /new|old/.test(cls) ? cls.match(/new|old/)[0] : '';
+
+                var day = _this.selectedDay(d, type);
+
+                _this.options.onSelected.call(this, 'date', day, $(this).data(MARK_DATA));
+
+                _this.$trigger && _this.hide('date', day, $(this).data(MARK_DATA));
+
+            }).on('click', '[' + ITEM_MONTH + ']', function () {
+                var y = Number(_this.$disMonth.html()),
+                    m = $(this).index() + 1;
+
+                _this.updateDateView(y, m);
+                vc('date', y, m);
+                _this.options.onSelected.call(this, 'month', new Date(y, m - 1));
+            });
+
+            // hover
+            _this.$element.on('mouseenter', '[' + ITEM_DAY + ']', function (e) {
+                var $this = $(this),
+                    day = $this.attr(ITEM_DAY).toDate();
+
+                if (_this.hasLabel() && $this.data(MARK_DATA)) {
+                    _this.showLabel(e, 'date', day, $this.data(MARK_DATA));
+                }
+
+                _this.options.onMouseenter.call(this, 'date', day, $this.data(MARK_DATA));
+            }).on('mouseleave', '[' + ITEM_DAY + ']', function () {
+                _this.$label.hide();
+            });
+        },
+        resize: function () {
+            var w = this.width,
+                h = this.height,
+                hdH = this.$element.find('.calendar-hd').outerHeight();
+
+            this.$element.width(w).height(h + hdH)
+                .find('.calendar-inner, .view')
+                .css('width', w + 'px');
+
+            this.$element.find('.calendar-ct').width(w).height(h);
+
+        },
+        init: function () {
+
+            this.fillStatic();
+            this.resize();
+            this.render();
+            this.view = this.options.view;
+            this.setView(this.view);
+            this.event();
+        },
+        setData: function (data) {
+            this.data = data;
+
+            if (this.view === 'date') {
+                var d = this.getDisDateValue();
+                this.fillDateItems(d[0], d[1]);
+            } else if (this.view === 'month') {
+                this.updateMonthView(this.$disMonth.html());
+            }
+        },
+        setDate: function (date) {
+            var dateObj = Date.tryParse(date);
+            this.updateDateView(dateObj.getFullYear(), dateObj.getMonth() + 1);
+            this.selectedDay(dateObj.getDate());
+        },
+        methods: function (name, args) {
+            if (OS.call(this[name]) === '[object Function]') {
+                return this[name].apply(this, args);
+            }
+        }
+    };
+
+    $.fn.calendar = function (options) {
+        var calendar = this.data('calendar'),
+            fn,
+            args = [].slice.call(arguments);
+
+        if (!calendar) {
+            return this.each(function () {
+                return $(this).data('calendar', new Calendar(this, options));
+            });
+        }
+        if (isString(options)) {
+            fn = options;
+            args.shift();
+            return calendar.methods(fn, args);
+        }
+
+        return this;
+    }
+
+    $.fn.calendar.defaults = defaults;
+
+}));
+
+function to_view_change()
+{
+    $(".display-new").click();
+}

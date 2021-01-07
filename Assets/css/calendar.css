@@ -77,11 +77,12 @@
     float: left;
 }
 .prev,.next{
-    padding: 0px 10px;
+    padding: 0px 5px;
     border: 1px solid lightgray;
-    font-size: 15px;
+    font-size: 15px !important;
     border-radius: 5px;
     color: lightgray;
+   
 }
 .prev{
   margin-right: 5px;
@@ -96,8 +97,9 @@
 }
 
 .calendar-hd {
-    padding: 10px 0;
-    height: 45px;
+    margin-top: 2.4%;
+    /* padding: 20px 0px 0px 0px; */
+    height: 30px;
     line-height: 30px;
 }
 
@@ -107,7 +109,7 @@
 }
 
 .view-month .calendar-hd {
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .calendar-arrow,
@@ -147,12 +149,13 @@
 }
 
 .calendar-arrow {
-    width: 80px;
+    
+    width: 60px;
     margin-right: 10px;
 }
 
 .calendar-arrow span {
-    font: 500 26px sans-serif;
+    font: 500 20px sans-serif;
 }
 
 .calendar ol li {
@@ -174,7 +177,13 @@
     height: 70px;
     line-height: 70px;
 }
-
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .calendar .days li[data-calendar-day]:hover,
 .calendar .view-month li[data-calendar-month]:hover {
     background: #eee;
@@ -236,15 +245,3 @@
     border: 6px solid transparent;
     border-top-color: #000;
 }
-.angle-down{
-    font-size: 28px;
-    transform: rotate(360deg);
-    cursor: pointer;
-    color: #3a6cf1;
-  }
-  .iconSize-portal{
-    width: 20px;
-    }
-    .iconSize1-portal{
-        width: 26px;
-    }

@@ -1,12 +1,12 @@
 .heading-portal{
   
     height: 42px;
-    width: 120px;
+    width: 112px;
     border: none;
 }
 .main-heading-portal5{
     height: 51px;
-    width: 120px;
+    width: 114px;
     justify-content: center;
     align-items: center;
     border: none;
@@ -27,19 +27,20 @@
     background-color:black ;
     color: white;
 } */
-.heading-portal>p{
+/* .heading-portal>p{
   padding: 12px 10px;
-}
+} */
 .main-heading-portal{
     display: flex !important;
     justify-content: center !important;
-    align-items: center !important;
+    /* align-items: center !important; */
+    padding-top: 12px;
 }
 .row-height-portal{
     height: 42px;
     border-bottom:2px dashed;
     color: #a2c0d4;
-    padding-left: 40px;
+  
 }
 .bottom-border-portal{
     border-bottom: 2px solid red;
@@ -59,14 +60,32 @@
 .purple-border{
     border-bottom: 2px solid #6665dd;
 }
+.color-bg{
+    background-color: #343a40!important;
+    color: white;
+}
 
 .color-black{
     color: black;
 }
 .time-font-size-portal{
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 .col-eight-portal{
     top: 31px;
-    padding-left: 8px
+    padding-left: 8px;
+   
 }
+.time-font-size-portal1 {
+    font-size: 0.75rem;
+}
+#last-row-top-portal{
+    top: 30px;
+}
+.main-row-portal{
+    margin-left: 68px;
+}
+/* .active, .btn1-portal:hover {
+    background-color: #343a40;
+    color: white;
+  } */
