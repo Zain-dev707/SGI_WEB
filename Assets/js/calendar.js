@@ -120,7 +120,7 @@
 
         ITEM_STYLE = 'style="width:{w}px;height:{h}px;line-height:{h}px; font-size:12px;" ',
         WEEK_ITEM_TPL = '<li ' + ITEM_STYLE + '>{wk}</li>',
-        DAY_ITEM_TPL = '<li ' + ITEM_STYLE + ' class="{class}" onclick="handleModalOpen(this)"  {action}="{date}">{value}</li>',
+        DAY_ITEM_TPL = '<li ' + ITEM_STYLE + ' class="{class}" onclick="handleModalOpen(this)" data-toggle="modal" data-target="#exampleModal" {action}="{date}">{value}</li>',
         MONTH_ITEM_TPL = '<li ' + ITEM_STYLE + ' ' + ITEM_MONTH + '>{m}</li>',
 
         TEMPLATE = [

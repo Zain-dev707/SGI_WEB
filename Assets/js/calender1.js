@@ -22,7 +22,7 @@ var data = [{
 
 var monthArray1 = ['','Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 // inline
-$("#selected-change").html(date+" "+ monthArray1[Number(month)]);
+$(".selected-change").html(date+" "+ monthArray1[Number(month)]);
 var $ca = $('#one').calendar({
     // view: 'month',
     width: 320,
@@ -44,7 +44,7 @@ var $ca = $('#one').calendar({
             var str = date+' ';
             var getda = str.split(" ");
             // console.log(getda);
-            $("#selected-change").html(getda[2]+" "+ monthArray1[Number(getm)]);
+            $(".selected-change").html(getda[2]+" "+ monthArray1[Number(getm)]);
             },300);
            
     },
