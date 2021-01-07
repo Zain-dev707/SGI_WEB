@@ -36,6 +36,15 @@ font-weight: 700;
   #checkbtn-portal-2:checked + label {
     background: #ff5b5b;
   }
+  .close-portal{
+      color: red;
+  }
+  .close-portal:hover{
+      color: red;
+  }
+  .close-portal:focus{
+outline: none !important;
+  }
    
 
 
