@@ -19,7 +19,7 @@ header.innerHTML = `<!-- navbar start  -->
   
     <ul class="navbar-nav ml-auto mt-1 ">
       <li class="nav-item active ml-2 mt-2">
-        <button class="z-button-white " href="#"> <span class="fa fa-bell-o  font-size-bell-icon-portal "></span><Span
+        <button class="z-button-white " href="#"> <span class="fa fa-bell-o  font-size-bell-icon-portal bg-transparent"></span><Span
             class="z-circle-yellow"></Span></button>
       </li>
       <li class="nav-item ml-2">
@@ -60,7 +60,8 @@ header.innerHTML = `<!-- navbar start  -->
       </div>
     </div>
     <div class="col-md-6 pt-2 text-end ">
-      <button type="button" class="btn btn-light border"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp; Voltar</button>
+    <a class="text-decoration" href="/index.html">  <button type="button" class="btn btn-light border"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp; Voltar</button></a>
+    
     </div>
   </div>
 </div>
