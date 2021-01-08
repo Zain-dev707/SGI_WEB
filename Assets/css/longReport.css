@@ -470,7 +470,7 @@
                         margin-left: 0%;
    }
   .col-img-head-portal{
-    width: 30px!important;
+    width: 16px!important;
     margin-left: 28px;
     margin-top: -12px;
                       }
@@ -495,3 +495,12 @@
 {
   justify-content: space-evenly;
 }
+.file-popup-img-portal{
+  width: 45px;
+}
+/* @media (min-width: 1450px){
+  .padding-zero-portal {
+    padding-left: 0px !important;
+}
+
+} */
