@@ -1,3 +1,24 @@
+function showOrHideDiv() {
+  var v = document.getElementById("show");
+  var icon = document.getElementById("icon1");
+  if (v.style.display === "none") {
+    v.style.display = "block";
+  
+
+    icon.style.transform = "rotate(0deg)";
+    console.log("open");
+  } else {
+    v.style.display = "none";
+    icon.style.transform = "rotate(180deg)";
+  
+
+    console.log("close");
+  }
+}
+
+
+
+
 var header = document.getElementById("sidebarCode");
 header.innerHTML = `  <!-- start -->
 <div id="demo">
@@ -48,3 +69,6 @@ header.innerHTML = `  <!-- start -->
 <!-- 6 -->
 
 </div>`;
+
+
+
