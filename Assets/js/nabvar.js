@@ -52,14 +52,14 @@ header.innerHTML = `<!-- navbar start  -->
 <div class="container-fluid">
   
   
-  <div class="row mb-2 mt-4">
-    <div class="col-md-6 pt-2 pl-0">
+  <div class="row pt-4 mb-4 ">
+    <div class="col-md-6  pl-0">
       <div class="d-flex">
         <h4 class="text-dark">Tarefas de hoje</h4>
         <div class="badge badge-warning z-badge ml-5  mt-2  mb-2 set-z-top"><i>6</i></div>
       </div>
     </div>
-    <div class="col-md-6 pt-2 text-end ">
+    <div class="col-md-6  text-end ">
     <a class="text-decoration" href="/index.html">  <button type="button" class="btn btn-light border"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp; Voltar</button></a>
     
     </div>

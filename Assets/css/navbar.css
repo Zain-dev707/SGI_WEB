@@ -120,10 +120,17 @@
   
 }  
 .top-heading-bottom-border-portal{
-  /* border-bottom: 2px solid; */
+ 
   border-bottom: 2px solid;
-  font-weight: bolder;
+  /* font-weight: bolder; */
+
+  
 } 
+
+
+/* .top-heading-padding-portal:hover{
+  border-bottom: 2px solid;
+} */
 .top-heading-portal{
  
   height: 42px;
