@@ -9,7 +9,7 @@ header.innerHTML = `<!-- navbar start  -->
   <div class="ml-4">
     <form class="form-inline w-218-Z">
       <Span class="fa fa-search text-dark ml-3 " style="z-index: 1;position: absolute;"></Span>
-      <input class="form-control w-218-Z pl-5 z-border-none" type="search" placeholder="Search"
+      <input class="form-control w-218-Z pl-5 z-border-none" type="search" placeholder="Busca"
         aria-label="Search">
 
     </form>
@@ -52,7 +52,7 @@ header.innerHTML = `<!-- navbar start  -->
 <div class="container-fluid">
   
   
-  <div class="row mb-2">
+  <div class="row mb-2 mt-4">
     <div class="col-md-6 pt-2 pl-0">
       <div class="d-flex">
         <h4 class="text-dark">Tarefas de hoje</h4>
