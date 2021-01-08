@@ -47,7 +47,7 @@
         startWeek: 0,
 
         // 星期格式
-        weekArray: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sab.', 'Dom.'],
+        weekArray: ['Dom.','Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sab.'],
 
         // 月份格式
     monthArray: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
