@@ -37,7 +37,27 @@ table td
     max-width: 80px;
 }
 
-
+.fa-chevron-left{
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    z-index: 111111111;
+}
+.fa-chevron-right{
+    position: absolute;
+    top: 11px;
+   right: 6px;
+    z-index: 111111111;
+}
+.padd-popup-portal{
+    padding:0.5rem 0rem 0.5rem 10rem;
+    background-color: white;
+    border: 1px 1px 0px 1px solid lightgray;
+}
+.padd-popup-portal>div{
+  padding: 0px 0px 0px 52px;
+   
+}
 
 
 
