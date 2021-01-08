@@ -44,28 +44,21 @@ function populateSelt() {
     // THE JSON ARRAY.
     var Curso = [
         {
-            "curso": "curso"
+            "curso": "INFANTIL"
         },
         {
 
-            "curso": "ajflsj"
+            "curso": "FUNDAMENTAL I"
         },
         {
 
-            "curso": "Fim DO Ano Letivo"
+            "curso": "FUNDAMENTAL II"
         },
         {
 
-            "curso": "Férias escolares"
+            "curso": "MÉDIO"
         },
-        {
-
-            "curso": "Recesso"
-        },
-        {
-
-            "curso": "Recuperação"
-        },
+     
     ];
     var cusorelement = document.getElementById('sel-2');
     let dropdocursar = "";
@@ -120,28 +113,17 @@ function populatedropTurma() {
     // THE JSON ARRAY.
     var Truma = [
         {
-            "truma": "serie"
+            "truma": "A"
         },
         {
 
-            "truma": "ajflsj"
+            "truma": "B"
         },
         {
 
-            "truma": "Fim DO Ano Letivo"
+            "truma": "C"
         },
-        {
-
-            "truma": "Férias escolares"
-        },
-        {
-
-            "truma": "Recesso"
-        },
-        {
-
-            "truma": "Recuperação"
-        },
+       
     ];
     var Trumaelement = document.getElementById('sel-4');
     let Trumaserie = "";
