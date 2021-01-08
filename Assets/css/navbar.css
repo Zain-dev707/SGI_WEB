@@ -115,9 +115,15 @@
 .col-lg-portal{
   max-width: 11.666667% !important;
   cursor: pointer;
+  height: 42px;
   
   
-}   
+}  
+.top-heading-bottom-border-portal{
+  /* border-bottom: 2px solid; */
+  border-bottom: 2px solid;
+  font-weight: bolder;
+} 
 .top-heading-portal{
  
   height: 42px;
