@@ -9,7 +9,7 @@ header.innerHTML = `<!-- navbar start  -->
   <div class="ml-4">
     <form class="form-inline w-218-Z">
       <Span class="fa fa-search text-dark ml-3 " style="z-index: 1;position: absolute;"></Span>
-      <input class="form-control w-218-Z pl-5 z-border-none" type="search" placeholder="Search"
+      <input class="form-control w-218-Z pl-5 z-border-none" type="search" placeholder="Busca"
         aria-label="Search">
 
     </form>
