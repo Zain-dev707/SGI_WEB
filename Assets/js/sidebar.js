@@ -1,3 +1,24 @@
+function showOrHideDiv() {
+  var v = document.getElementById("show");
+  var icon = document.getElementById("icon1");
+  if (v.style.display === "none") {
+    v.style.display = "block";
+  
+
+    icon.style.transform = "rotate(0deg)";
+    console.log("open");
+  } else {
+    v.style.display = "none";
+    icon.style.transform = "rotate(180deg)";
+  
+
+    console.log("close");
+  }
+}
+
+
+
+
 var header = document.getElementById("sidebarCode");
 header.innerHTML = `  <!-- start -->
 <div id="demo">
@@ -14,17 +35,22 @@ header.innerHTML = `  <!-- start -->
     alt="">
   &nbsp; &nbsp;<span>Dashboard</span>
 </div>
+
+</div>
+
+      <!-- 2 -->
+   <div class="d-flex">
+   <div class="sidebar-padding-Portal"><img src="Assets/icon/calender.png" class="img-fluid iconSize1-portal"
+   alt="">
+ &nbsp; &nbsp;<span>Categorias</span>
+</div>
 <div class="iconUper">
   <i class="fa fa-angle-down angle-down" aria-hidden="true" onclick="showOrHideDiv()" id="icon1"></i>
   
 </div>
-</div>
-<div id="show" >
-      <!-- 2 -->
-      <div class="sidebar-padding-Portal"><img src="Assets/icon/calender.png" class="img-fluid iconSize1-portal"
-        alt="">
-      &nbsp; &nbsp;<span>Categorias</span>
-    </div>
+
+   </div>
+   <div id="show" >
     <!-- 3 -->
     <div class="sidebar-padding-Portal"><img src="Assets/icon/people.png" class="img-fluid iconSize1-portal"
       alt="">
@@ -41,8 +67,8 @@ header.innerHTML = `  <!-- start -->
 &nbsp; &nbsp;<span>Responsável Financeiro</span>
 </div>
 <!-- 6 -->
-<div class="sidebar-padding-Portal"><img src="Assets/icon/setting.png" class="img-fluid iconSize1-portal"
-alt="">
-&nbsp; &nbsp;<span>Configuracoes</span>
-</div>
+
 </div>`;
+
+
+
