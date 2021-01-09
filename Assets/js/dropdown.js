@@ -2,9 +2,6 @@ function populateSelect() {
     // THE JSON ARRAY.
     var Categoria = [
         {
-            "categoria": "Categoria"
-        },
-        {
 
             "categoria": "Feriado"
         },
@@ -29,10 +26,10 @@ function populateSelect() {
     let dropdo = "";
 
     for (var i = 0; i < Categoria.length; i++) {
-        dropdo  += '<option  value="'+Categoria[i]['categoria']+'">' + Categoria[i]['categoria'] + '</option>';
+        dropdo += '<option  value="' + Categoria[i]['categoria'] + '">' + Categoria[i]['categoria'] + '</option>';
     }
     ele.innerHTML = dropdo;
-        // ele.innerHTML = ele.innerHTML +
+    // ele.innerHTML = ele.innerHTML +
     //         '<option value="">' + Categoria[i]['categoria'] + '</option>';                // }
 }
 populateSelect();
@@ -58,57 +55,113 @@ function populateSelt() {
 
             "curso": "MÉDIO"
         },
-     
+
     ];
+
     var cusorelement = document.getElementById('sel-2');
+
+    var val1 = document.getElementById('checkelement');
     let dropdocursar = "";
 
     for (var i = 0; i < Curso.length; i++) {
-        dropdocursar  += '<option  value="'+Curso[i]['curso']+'">' + Curso[i]['curso'] + '</option>';
+        dropdocursar += '<option  value="' + Curso[i]['curso'] + '">' + Curso[i]['curso'] + '</option>';
     }
+
+    // console.log(val1)
     cusorelement.innerHTML = dropdocursar;
-        // ele.innerHTML = ele.innerHTML +
+
+    // ele.innerHTML = ele.innerHTML +
     //         '<option value="">' + Categoria[i]['categoria'] + '</option>';                // }
 }
 populateSelt()
-function populatedropdoserie() {
-    // THE JSON ARRAY.
-    var Serie = [
-        {
-            "serie": "serie"
-        },
-        {
+function populatevalue(cursoelement) {
+    let fundamental = [{
 
-            "serie": "ajflsj"
-        },
-        {
+        "fundamental": "FUNDAMENTAL II"
+    },
+    {
 
-            "serie": "Fim DO Ano Letivo"
-        },
-        {
+        "fundamental": "fundamental"
+    },]
+    let INFANTIL = [{
 
-            "serie": "Férias escolares"
-        },
-        {
+        "Infantil": "INFANTIL II"
+    },
+    {
 
-            "serie": "Recesso"
-        },
-        {
+        "Infantil": "INFANTIL"
+    },]
+    let FUNDAMENTALII = [{
 
-            "serie": "Recuperação"
-        },
-    ];
-    var serieelement = document.getElementById('sel-3');
-    let dropdoserie = "";
+        "fundamental11": "FUNDAMENTAL II"
+    },
+    {
 
-    for (var i = 0; i < Serie.length; i++) {
-        dropdoserie  += '<option  value="'+Serie[i]['serie']+'">' + Serie[i]['serie'] + '</option>';
+        "fundamental11": "FUNDAMENTAL II"
+    },]
+    let MÉDIO = [{
+
+        "Medio": "MÉDIO"
+    },
+    {
+
+        "fundamental11": "FUNDAMENTAL II"
+    },]
+    var fundamentalelement = document.getElementById('sel-3');
+    let allelement = "";
+
+
+
+    // alert(element.value)
+    if (cursoelement.value === "FUNDAMENTAL I") {
+        for (var i = 0; i < fundamental.length; i++) {
+            allelement += '<option  value="' + fundamental[i]['fundamental'] + '">' + fundamental[i]['fundamental'] + '</option>';
+        }
+        fundamentalelement.innerHTML = allelement;
+    } else if (cursoelement.value === "INFANTIL") {
+        for (var i = 0; i < INFANTIL.length; i++) {
+            allelement += '<option  value="' + INFANTIL[i]['Infantil'] + '">' + INFANTIL[i]['Infantil'] + '</option>';
+        }
+        fundamentalelement.innerHTML = allelement;
+    } else if(cursoelement.value === "FUNDAMENTAL II" ){
+        for (var i = 0; i < FUNDAMENTALII.length; i++) {
+            allelement += '<option  value="' + FUNDAMENTALII[i]['fundamental11'] + '">' + FUNDAMENTALII[i]['fundamental11'] + '</option>';
+        }
+        fundamentalelement.innerHTML = allelement;
     }
-    serieelement.innerHTML = dropdoserie;
-        // ele.innerHTML = ele.innerHTML +
-    //         '<option value="">' + Categoria[i]['categoria'] + '</option>';                // }
 }
-populatedropdoserie();
+// function populatedropdoserie() {
+//     // THE JSON ARRAY.
+//     var Serie = [
+//         {
+//             "serie": "INFANTIL"
+//         },
+//         {
+
+//             "serie": "FUNDAMENTAL I"
+//         },
+//         {
+
+//             "serie": "FUNDAMENTAL II"
+//         },
+//         {
+
+//             "serie": "MÉDIO"
+//         },
+//     ];
+
+
+//     let dropdoserie = "";
+//     let fundamental = "";
+//     for (var i = 0; i < Serie.length; i++) {
+//         dropdoserie += '<option  value="' + Serie[i]['serie'] + '">' + Serie[i]['serie'] + '</option>';
+//     }
+
+//     serieelement.innerHTML = dropdoserie;
+//     // ele.innerHTML = ele.innerHTML +
+//     //         '<option value="">' + Categoria[i]['categoria'] + '</option>';                // }
+// }
+// populatedropdoserie();
 function populatedropTurma() {
     // THE JSON ARRAY.
     var Truma = [
@@ -123,57 +176,78 @@ function populatedropTurma() {
 
             "truma": "C"
         },
-       
+
     ];
     var Trumaelement = document.getElementById('sel-4');
     let Trumaserie = "";
 
     for (var i = 0; i < Truma.length; i++) {
-        Trumaserie  += '<option  value="'+Truma[i]['truma']+'">' + Truma[i]['truma'] + '</option>';
+        Trumaserie += '<option  value="' + Truma[i]['truma'] + '">' + Truma[i]['truma'] + '</option>';
     }
     Trumaelement.innerHTML = Trumaserie;
-        // ele.innerHTML = ele.innerHTML +
+    // ele.innerHTML = ele.innerHTML +
     //         '<option value="">' + Categoria[i]['categoria'] + '</option>';                // }
 }
 populatedropTurma();
-function populatedropTurma() {
+function populatedropDisplia() {
     // THE JSON ARRAY.
-    var Truma = [
+    var Disciplinaelement = [
         {
-            "truma": "serie"
+
+            "disciplina": "Arte Musical e Cênica "
         },
         {
 
-            "truma": "ajflsj"
+            "disciplina": "Arte Plástica"
         },
         {
 
-            "truma": "Fim DO Ano Letivo"
+            "disciplina": "Ciências"
         },
         {
 
-            "truma": "Férias escolares"
+            "disciplina": "Educação Digital"
         },
         {
 
-            "truma": "Recesso"
+            "disciplina": "Educação Física"
         },
         {
 
-            "truma": "Recuperação"
+            "disciplina": "Ensino Religioso"
+        },
+        {
+
+            "disciplina": "Geografia"
+        },
+        {
+
+            "disciplina": "História"
+        },
+        {
+
+            "disciplina": "Inglês"
+        },
+        {
+
+            "disciplina": "Língua Portuguesa"
+        },
+        {
+
+            "disciplina": "Matemática"
         },
     ];
-    var Trumaelement = document.getElementById('sel-4');
-    let Trumaserie = "";
+    var disciplinaelement = document.getElementById('sel-5');
+    let disciplina = "";
 
-    for (var i = 0; i < Truma.length; i++) {
-        Trumaserie  += '<option  value="'+Truma[i]['truma']+'">' + Truma[i]['truma'] + '</option>';
+    for (var i = 0; i < Disciplinaelement.length; i++) {
+        disciplina += '<option  value="' + Disciplinaelement[i]['disciplina'] + '">' + Disciplinaelement[i]['disciplina'] + '</option>';
     }
-    Trumaelement.innerHTML = Trumaserie;
-        // ele.innerHTML = ele.innerHTML +
+    disciplinaelement.innerHTML = disciplina;
+    // ele.innerHTML = ele.innerHTML +
     //         '<option value="">' + Categoria[i]['categoria'] + '</option>';                // }
 }
-populatedropTurma();
+populatedropDisplia();
 jscolor.presets.default = {
     position: 'right',
     palette: [

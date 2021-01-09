@@ -20,7 +20,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-    <script src="./Assets/js/jscolor.js"></script>
+  <script src="./Assets/js/jscolor.js"></script>
   <title class="text-info">Popup</title>
 
   <link rel="stylesheet" href="./Assets/css/Popup.css">
@@ -34,7 +34,7 @@
         <div class="row mt-4">
           <div class="col-lg-7 col-md-7 col-sm-7 text-end">
             <div class="text-white text-right">
-              <h3>CALENDARIO 2021</h3>
+              <h3>Calendar-Setup-Modal</h3>
             </div>
           </div>
           <div class="col-lg-1 col-md-1 col-sm-1"></div>
@@ -50,15 +50,15 @@
           </div>
         </div>
         <hr class="mt-5 border-white">
-       <div class="row mt-5 ">
+        <div class="row mt-5 ">
           <div class="col-lg-4 col-md-4 col-sm-4  input-Width-portal">
             <div class="input-group ">
               <!-- <input type="text" onclick="populateSelect()" class="form-control" placeholder="Categoria"
                 aria-label="Text input with dropdown button"> -->
               <!-- <div class="input-group-append"> -->
-                <!-- <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
+              <!-- <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false"></button> -->
-                <!-- <div class="dropdown-menu">
+              <!-- <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Action</a>
                   <a class="dropdown-item" href="#">Another action</a>
                   <a class="dropdown-item" href="#">Something else here</a>
@@ -66,11 +66,11 @@
                   <a class="dropdown-item" href="#">Separated link</a>
                 </div> -->
               <!-- </div> -->
-              <input  class="form-control" list="sel" placeholder="catagory"/>     
-              <datalist  id="sel">
-              
+              <input class="form-control" list="sel" placeholder="Categoria" />
+              <datalist id="sel">
+
               </datalist></i>
-          
+
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 input-Width-portal ">
@@ -88,26 +88,26 @@
                   <a class="dropdown-item" href="#">Separated link</a>
                 </div>
               </div> -->
-              <input  class="form-control" list="sel-2" placeholder="Curso"/>     
-              <datalist  id="sel-2">
+              <input class="form-control" onchange="populatevalue(this)" id="checkelement" list="sel-2" placeholder="Curso" />
+              <datalist id="sel-2">
                 <!-- <option value="INFANTIL">
                 <option value="FUNDAMENTAL I">
                 <option value="FUNDAMENTAL II">
                 <option value="MÉDIO"> -->
-                
+
               </datalist></i>
-    
+
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 input-Width-portal ">
             <div class="input-group">
-              <input  class="form-control" list="sel-3" placeholder="serie"/>     
-              <datalist  id="sel-3">
+              <input class="form-control" list="sel-3" placeholder="serie" />
+              <datalist id="sel-3">
                 <!-- <option value="INFANTIL">
                 <option value="FUNDAMENTAL I">
                 <option value="FUNDAMENTAL II">
                 <option value="MÉDIO"> -->
-                
+
               </datalist></i>
               <!-- <input type="text" class="form-control " placeholder="Série"
                 aria-label="Text input with dropdown button">
@@ -128,13 +128,13 @@
         <div class="row mt-5 ">
           <div class="col-lg-4 col-md-4 col-sm-4  input-Width-portal">
             <div class="input-group ">
-              <input  class="form-control" list="sel-4" placeholder="Truma"/>     
-              <datalist  id="sel-4">
+              <input class="form-control" list="sel-4" placeholder="Truma" />
+              <datalist id="sel-4">
                 <!-- <option value="INFANTIL">
                 <option value="FUNDAMENTAL I">
                 <option value="FUNDAMENTAL II">
                 <option value="MÉDIO"> -->
-                
+
               </datalist>
               <!-- <input type="text" class="form-control " placeholder="Turma"
                 aria-label="Text input with dropdown button"> -->
@@ -158,13 +158,13 @@
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 input-Width-portal ">
             <div class="input-group">
-              <input  class="form-control" list="sel-4" placeholder="Disciplina"/>     
-              <datalist  id="sel-4">
+              <input class="form-control" list="sel-5" placeholder="Disciplina" />
+              <datalist id="sel-5">
                 <!-- <option value="INFANTIL">
                 <option value="FUNDAMENTAL I">
                 <option value="FUNDAMENTAL II">
                 <option value="MÉDIO"> -->
-                
+
               </datalist></i>
               <!-- <input type="text" class="form-control " placeholder="Disciplina"
                 aria-label="Text input with dropdown button">
@@ -183,14 +183,15 @@
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 input-Width-portal ">
             <div class="input-group">
-              <input  class="form-control " data-jscolor="{required:false}" placeholder="Selecionar" aria-label="Text input with dropdown button" />
-              
+              <input class="form-control " data-jscolor="{required:false}" placeholder="Selecionar"
+                aria-label="Text input with dropdown button" />
+
               <!-- <input type="text" class="form-control " placeholder="Selecionar"
                 aria-label="Text input with dropdown button"> -->
               <div class="input-group-append">
                 <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false"></button>
-             
+
               </div>
             </div>
           </div>
@@ -250,62 +251,64 @@
           <div class="col-lg-12 col-md-12 col-sm-12">
             <table class="table table-bordered bg-white">
               <!--Carousel Wrapper-->
-        <div id="multi-item-example" class="carousel slide carousel-multi-item " >
-          <!--Controls-->
-          <div class="controls-top">
-            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-          </div>
-          <!--/.Controls-->
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">        
-            <!--First slide-->
-            <div class="carousel-item active">
-              <div class="d-flex padd-popup-portal">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div>11/1/21</div>
-                <div>11/2/21</div>
-                <div>11/3/21</div>
-                <div>11/4/21</div>
-                <div>11/5/21</div>
-                <div>11/6/21</div>
-                <div>11/7/21</div>
-                <div></div>
-              </div>             
-            </div>
-            <!--/.First slide-->       
-            <!--Second slide-->
-            <div class="carousel-item  ">
-              <div class="d-flex padd-popup-portal">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div>11/1/21</div>
-                <div>11/2/21</div>
-                <div>11/3/21</div>
-                <div>11/4/21</div>
-                <div>11/5/21</div>
-                <div>11/6/21</div>
-                <div>11/7/21</div>
-                <div></div>
-              </div>             
-            </div>
-            <!--/.Second slide-->        
-          </div>
-          <!--/.Slides-->       
-        </div>
-        <!--/.Carousel Wrapper-->            
-              <tr class="text-white bg-dropdown-Portal text-center">                
+              <div id="multi-item-example" class="carousel slide carousel-multi-item ">
+                <!--Controls-->
+                <div class="controls-top">
+                  <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                      class="fa fa-chevron-left"></i></a>
+                  <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                      class="fa fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                  <!--First slide-->
+                  <div class="carousel-item active">
+                    <div class="d-flex padd-popup-portal">
+                      <div class=""></div>
+                      <div class=""></div>
+                      <div class=""></div>
+                      <div>11/1/21</div>
+                      <div>11/2/21</div>
+                      <div>11/3/21</div>
+                      <div>11/4/21</div>
+                      <div>11/5/21</div>
+                      <div>11/6/21</div>
+                      <div>11/7/21</div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <!--/.First slide-->
+                  <!--Second slide-->
+                  <div class="carousel-item  ">
+                    <div class="d-flex padd-popup-portal">
+                      <div class=""></div>
+                      <div class=""></div>
+                      <div class=""></div>
+                      <div>11/1/21</div>
+                      <div>11/2/21</div>
+                      <div>11/3/21</div>
+                      <div>11/4/21</div>
+                      <div>11/5/21</div>
+                      <div>11/6/21</div>
+                      <div>11/7/21</div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <!--/.Second slide-->
+                </div>
+                <!--/.Slides-->
+              </div>
+              <!--/.Carousel Wrapper-->
+              <tr class="text-white bg-dropdown-Portal text-center">
                 <th rowspan="8" class="bg-white Width-eighty-Portal pt-5">
                   <p class="vertical-text-portal">Turno Da Manhã</p>
                 </th>
                 <th>Horário</th>
-               <th>Seg.</th>
+                <th>Seg.</th>
                 <th>Ter.</th>
                 <th>Qua.</th>
-               <th>Qui.</th>
+                <th>Qui.</th>
                 <th>Sex.</th>
                 <th>Sab.</th>
                 <th>Dom.</th>
@@ -363,7 +366,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-              </tr>    
+              </tr>
               <tr>
                 <td class="text-center table-Text-color-portal">07:10 - 08:00</td>
                 <td></td>
@@ -380,7 +383,7 @@
               <tr>
                 <th rowspan="8" class="bg-white Width-eighty-Portal pt-5">
                   <p class="vertical-text-portal">Turno Da Manhã</p>
-               </th>
+                </th>
                 <td class="text-center table-Text-color-portal">07:10 - 08:00</td>
                 <td></td>
                 <td></td>
@@ -389,9 +392,9 @@
                 <td></td>
                 <td></td>
                 <td></td>
-             </tr>
+              </tr>
               <tr>
-              <td class="text-center table-Text-color-portal">07:10 - 08:00</td>
+                <td class="text-center table-Text-color-portal">07:10 - 08:00</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -463,11 +466,13 @@
           <div class="col-lg-4 col-md-4 col-sm-4">
 
             <div class="d-flex mt-4">
-              <button type="button" class="btn btn-danger w-75" data-toggle="button" aria-pressed="false" autocomplete="off">
+              <button type="button" class="btn btn-danger w-75" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
                 CANCELAR
                 <i class="fa fa-times" aria-hidden="true"></i>
               </button>
-              <button type="button" class="btn btn-success ml-4 w-75" data-toggle="button" aria-pressed="false" autocomplete="off">
+              <button type="button" class="btn btn-success ml-4 w-75" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
                 SALVAR
               </button>
             </div>
@@ -478,7 +483,7 @@
     </div>
 
 
-    
+
 
     <script src="./Assets/js/dropdown.js"></script>
 
@@ -486,8 +491,8 @@
 </body>
 <script>
   $('.carousel').carousel({
-interval: false,
-});
+    interval: false,
+  });
 </script>
 
 </html>
