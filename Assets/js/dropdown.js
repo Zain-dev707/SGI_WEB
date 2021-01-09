@@ -174,6 +174,14 @@ function populatedropTurma() {
     //         '<option value="">' + Categoria[i]['categoria'] + '</option>';                // }
 }
 populatedropTurma();
+
+
+
+
+
+
+
+
 jscolor.presets.default = {
     position: 'right',
     palette: [
