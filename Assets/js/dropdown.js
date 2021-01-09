@@ -98,6 +98,10 @@ function populatevalue(cursoelement) {
     {
 
         "fundamental11": "FUNDAMENTAL II"
+    },
+    {
+
+        "fundamental11": "FUNDAMENTAL II"
     },]
 
     var fundamentalelement = document.getElementById('sel-3');

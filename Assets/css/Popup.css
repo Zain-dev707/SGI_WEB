@@ -63,12 +63,19 @@ table td
 }
 .padd-popup-portal{
     padding:0.5rem 0rem 0.5rem 10rem;
-    background-color: white;
+    background-color: #1A5A82;
     border: 1px 1px 0px 1px solid lightgray;
+
 }
 .padd-popup-portal>div{
   padding: 0px 0px 0px 52px;
    
+}
+
+.carousel-item
+{
+    background-color: #1A5A82;
+
 }
 
 
