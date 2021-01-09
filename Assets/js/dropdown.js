@@ -103,14 +103,7 @@ function populatevalue(cursoelement) {
 
         "fundamental11": "FUNDAMENTAL II"
     },]
-    let MÉDIO = [{
 
-        "Medio": "MÉDIO"
-    },
-    {
-
-        "fundamental11": "FUNDAMENTAL II"
-    },]
     var fundamentalelement = document.getElementById('sel-3');
     let allelement = "";
 
